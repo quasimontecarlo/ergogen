@@ -185,7 +185,7 @@ pcbs:
           P9_label: P9
 
       reset:
-        what: ceoloide/reset_switch_tht_top
+        what: reset_switch_tht_top
         where:
           ref: matrix_inner_bottom
           shift: [30, 0]
@@ -194,7 +194,7 @@ pcbs:
           from: GND
           to: RST
       power:
-        what: ceoloide/power_switch_smd_side
+        what: power_switch_smd_side
         where:
           ref: matrix_inner_bottom
           shift: [40, 0]
