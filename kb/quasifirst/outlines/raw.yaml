@@ -1,0 +1,766 @@
+models:
+    export:
+        models:
+            a:
+                models:
+                    a:
+                        models:
+                            a:
+                                models:
+                                    a:
+                                        models:
+                                            a:
+                                                models:
+                                                    a:
+                                                        models:
+                                                            a:
+                                                                models:
+                                                                    a:
+                                                                        models:
+                                                                            a:
+                                                                                models:
+                                                                                    a:
+                                                                                        models:
+                                                                                            a:
+                                                                                                models:
+                                                                                                    a:
+                                                                                                        models:
+                                                                                                            a:
+                                                                                                                models:
+                                                                                                                    a:
+                                                                                                                        models:
+                                                                                                                            a:
+                                                                                                                                models:
+                                                                                                                                    a:
+                                                                                                                                        models:
+                                                                                                                                            a:
+                                                                                                                                                models:
+                                                                                                                                                    a:
+                                                                                                                                                        models: {}
+                                                                                                                                                        origin:
+                                                                                                                                                            - 0
+                                                                                                                                                            - 0
+                                                                                                                                                    b:
+                                                                                                                                                        paths:
+                                                                                                                                                            ShapeLine1:
+                                                                                                                                                                type: line
+                                                                                                                                                                origin:
+                                                                                                                                                                    - 161.6946463
+                                                                                                                                                                    - -174.1799292
+                                                                                                                                                                end:
+                                                                                                                                                                    - 179.6391583
+                                                                                                                                                                    - -172.7676655
+                                                                                                                                                            ShapeLine2:
+                                                                                                                                                                type: line
+                                                                                                                                                                origin:
+                                                                                                                                                                    - 179.6391583
+                                                                                                                                                                    - -172.7676655
+                                                                                                                                                                end:
+                                                                                                                                                                    - 178.3053537
+                                                                                                                                                                    - -155.8200708
+                                                                                                                                                            ShapeLine3:
+                                                                                                                                                                type: line
+                                                                                                                                                                origin:
+                                                                                                                                                                    - 178.3053537
+                                                                                                                                                                    - -155.8200708
+                                                                                                                                                                end:
+                                                                                                                                                                    - 160.3608417
+                                                                                                                                                                    - -157.2323345
+                                                                                                                                                            ShapeLine4:
+                                                                                                                                                                type: line
+                                                                                                                                                                origin:
+                                                                                                                                                                    - 160.3608417
+                                                                                                                                                                    - -157.2323345
+                                                                                                                                                                end:
+                                                                                                                                                                    - 161.6946463
+                                                                                                                                                                    - -174.1799292
+                                                                                                                                                        origin:
+                                                                                                                                                            - 0
+                                                                                                                                                            - 0
+                                                                                                                                                origin:
+                                                                                                                                                    - 0
+                                                                                                                                                    - 0
+                                                                                                                                            b:
+                                                                                                                                                paths:
+                                                                                                                                                    ShapeLine1:
+                                                                                                                                                        type: line
+                                                                                                                                                        origin:
+                                                                                                                                                            - 160.28238259999998
+                                                                                                                                                            - -156.2354172
+                                                                                                                                                        end:
+                                                                                                                                                            - 178.22689459999998
+                                                                                                                                                            - -154.8231535
+                                                                                                                                                    ShapeLine2:
+                                                                                                                                                        type: line
+                                                                                                                                                        origin:
+                                                                                                                                                            - 178.22689459999998
+                                                                                                                                                            - -154.8231535
+                                                                                                                                                        end:
+                                                                                                                                                            - 176.89308999999997
+                                                                                                                                                            - -137.8755588
+                                                                                                                                                    ShapeLine3:
+                                                                                                                                                        type: line
+                                                                                                                                                        origin:
+                                                                                                                                                            - 176.89308999999997
+                                                                                                                                                            - -137.8755588
+                                                                                                                                                        end:
+                                                                                                                                                            - 158.948578
+                                                                                                                                                            - -139.2878225
+                                                                                                                                                    ShapeLine4:
+                                                                                                                                                        type: line
+                                                                                                                                                        origin:
+                                                                                                                                                            - 158.948578
+                                                                                                                                                            - -139.2878225
+                                                                                                                                                        end:
+                                                                                                                                                            - 160.28238259999998
+                                                                                                                                                            - -156.2354172
+                                                                                                                                                origin:
+                                                                                                                                                    - 0
+                                                                                                                                                    - 0
+                                                                                                                                        origin:
+                                                                                                                                            - 0
+                                                                                                                                            - 0
+                                                                                                                                    b:
+                                                                                                                                        paths:
+                                                                                                                                            ShapeLine1:
+                                                                                                                                                type: line
+                                                                                                                                                origin:
+                                                                                                                                                    - 158.87011889999997
+                                                                                                                                                    - -138.2909052
+                                                                                                                                                end:
+                                                                                                                                                    - 176.81463089999997
+                                                                                                                                                    - -136.8786415
+                                                                                                                                            ShapeLine2:
+                                                                                                                                                type: line
+                                                                                                                                                origin:
+                                                                                                                                                    - 176.81463089999997
+                                                                                                                                                    - -136.8786415
+                                                                                                                                                end:
+                                                                                                                                                    - 175.4808263
+                                                                                                                                                    - -119.93104679999999
+                                                                                                                                            ShapeLine3:
+                                                                                                                                                type: line
+                                                                                                                                                origin:
+                                                                                                                                                    - 175.4808263
+                                                                                                                                                    - -119.93104679999999
+                                                                                                                                                end:
+                                                                                                                                                    - 157.5363143
+                                                                                                                                                    - -121.3433105
+                                                                                                                                            ShapeLine4:
+                                                                                                                                                type: line
+                                                                                                                                                origin:
+                                                                                                                                                    - 157.5363143
+                                                                                                                                                    - -121.3433105
+                                                                                                                                                end:
+                                                                                                                                                    - 158.87011889999997
+                                                                                                                                                    - -138.2909052
+                                                                                                                                        origin:
+                                                                                                                                            - 0
+                                                                                                                                            - 0
+                                                                                                                                origin:
+                                                                                                                                    - 0
+                                                                                                                                    - 0
+                                                                                                                            b:
+                                                                                                                                paths:
+                                                                                                                                    ShapeLine1:
+                                                                                                                                        type: line
+                                                                                                                                        origin:
+                                                                                                                                            - 179.80997140000002
+                                                                                                                                            - -156.9721773
+                                                                                                                                        end:
+                                                                                                                                            - 197.80108950000002
+                                                                                                                                            - -156.4067836
+                                                                                                                                    ShapeLine2:
+                                                                                                                                        type: line
+                                                                                                                                        origin:
+                                                                                                                                            - 197.80108950000002
+                                                                                                                                            - -156.4067836
+                                                                                                                                        end:
+                                                                                                                                            - 197.2671066
+                                                                                                                                            - -139.4151721
+                                                                                                                                    ShapeLine3:
+                                                                                                                                        type: line
+                                                                                                                                        origin:
+                                                                                                                                            - 197.2671066
+                                                                                                                                            - -139.4151721
+                                                                                                                                        end:
+                                                                                                                                            - 179.2759885
+                                                                                                                                            - -139.9805658
+                                                                                                                                    ShapeLine4:
+                                                                                                                                        type: line
+                                                                                                                                        origin:
+                                                                                                                                            - 179.2759885
+                                                                                                                                            - -139.9805658
+                                                                                                                                        end:
+                                                                                                                                            - 179.80997140000002
+                                                                                                                                            - -156.9721773
+                                                                                                                                origin:
+                                                                                                                                    - 0
+                                                                                                                                    - 0
+                                                                                                                        origin:
+                                                                                                                            - 0
+                                                                                                                            - 0
+                                                                                                                    b:
+                                                                                                                        paths:
+                                                                                                                            ShapeLine1:
+                                                                                                                                type: line
+                                                                                                                                origin:
+                                                                                                                                    - 179.24457770000004
+                                                                                                                                    - -138.9810592
+                                                                                                                                end:
+                                                                                                                                    - 197.23569580000003
+                                                                                                                                    - -138.41566550000002
+                                                                                                                            ShapeLine2:
+                                                                                                                                type: line
+                                                                                                                                origin:
+                                                                                                                                    - 197.23569580000003
+                                                                                                                                    - -138.41566550000002
+                                                                                                                                end:
+                                                                                                                                    - 196.70171290000002
+                                                                                                                                    - -121.42405400000001
+                                                                                                                            ShapeLine3:
+                                                                                                                                type: line
+                                                                                                                                origin:
+                                                                                                                                    - 196.70171290000002
+                                                                                                                                    - -121.42405400000001
+                                                                                                                                end:
+                                                                                                                                    - 178.71059480000002
+                                                                                                                                    - -121.9894477
+                                                                                                                            ShapeLine4:
+                                                                                                                                type: line
+                                                                                                                                origin:
+                                                                                                                                    - 178.71059480000002
+                                                                                                                                    - -121.9894477
+                                                                                                                                end:
+                                                                                                                                    - 179.24457770000004
+                                                                                                                                    - -138.9810592
+                                                                                                                        origin:
+                                                                                                                            - 0
+                                                                                                                            - 0
+                                                                                                                origin:
+                                                                                                                    - 0
+                                                                                                                    - 0
+                                                                                                            b:
+                                                                                                                paths:
+                                                                                                                    ShapeLine1:
+                                                                                                                        type: line
+                                                                                                                        origin:
+                                                                                                                            - 178.67918400000005
+                                                                                                                            - -120.98994110000001
+                                                                                                                        end:
+                                                                                                                            - 196.67030210000004
+                                                                                                                            - -120.42454740000001
+                                                                                                                    ShapeLine2:
+                                                                                                                        type: line
+                                                                                                                        origin:
+                                                                                                                            - 196.67030210000004
+                                                                                                                            - -120.42454740000001
+                                                                                                                        end:
+                                                                                                                            - 196.13631920000003
+                                                                                                                            - -103.43293590000002
+                                                                                                                    ShapeLine3:
+                                                                                                                        type: line
+                                                                                                                        origin:
+                                                                                                                            - 196.13631920000003
+                                                                                                                            - -103.43293590000002
+                                                                                                                        end:
+                                                                                                                            - 178.14520110000004
+                                                                                                                            - -103.9983296
+                                                                                                                    ShapeLine4:
+                                                                                                                        type: line
+                                                                                                                        origin:
+                                                                                                                            - 178.14520110000004
+                                                                                                                            - -103.9983296
+                                                                                                                        end:
+                                                                                                                            - 178.67918400000005
+                                                                                                                            - -120.98994110000001
+                                                                                                                origin:
+                                                                                                                    - 0
+                                                                                                                    - 0
+                                                                                                        origin:
+                                                                                                            - 0
+                                                                                                            - 0
+                                                                                                    b:
+                                                                                                        paths:
+                                                                                                            ShapeLine1:
+                                                                                                                type: line
+                                                                                                                origin:
+                                                                                                                    - 198.78515180000002
+                                                                                                                    - -151.4400286
+                                                                                                                end:
+                                                                                                                    - 216.7829312
+                                                                                                                    - -151.7227603
+                                                                                                            ShapeLine2:
+                                                                                                                type: line
+                                                                                                                origin:
+                                                                                                                    - 216.7829312
+                                                                                                                    - -151.7227603
+                                                                                                                end:
+                                                                                                                    - 217.0499556
+                                                                                                                    - -134.7248576
+                                                                                                            ShapeLine3:
+                                                                                                                type: line
+                                                                                                                origin:
+                                                                                                                    - 217.0499556
+                                                                                                                    - -134.7248576
+                                                                                                                end:
+                                                                                                                    - 199.05217620000002
+                                                                                                                    - -134.4421259
+                                                                                                            ShapeLine4:
+                                                                                                                type: line
+                                                                                                                origin:
+                                                                                                                    - 199.05217620000002
+                                                                                                                    - -134.4421259
+                                                                                                                end:
+                                                                                                                    - 198.78515180000002
+                                                                                                                    - -151.4400286
+                                                                                                        origin:
+                                                                                                            - 0
+                                                                                                            - 0
+                                                                                                origin:
+                                                                                                    - 0
+                                                                                                    - 0
+                                                                                            b:
+                                                                                                paths:
+                                                                                                    ShapeLine1:
+                                                                                                        type: line
+                                                                                                        origin:
+                                                                                                            - 199.06788350000002
+                                                                                                            - -133.44224920000002
+                                                                                                        end:
+                                                                                                            - 217.0656629
+                                                                                                            - -133.72498090000002
+                                                                                                    ShapeLine2:
+                                                                                                        type: line
+                                                                                                        origin:
+                                                                                                            - 217.0656629
+                                                                                                            - -133.72498090000002
+                                                                                                        end:
+                                                                                                            - 217.3326873
+                                                                                                            - -116.72707820000002
+                                                                                                    ShapeLine3:
+                                                                                                        type: line
+                                                                                                        origin:
+                                                                                                            - 217.3326873
+                                                                                                            - -116.72707820000002
+                                                                                                        end:
+                                                                                                            - 199.33490790000002
+                                                                                                            - -116.44434650000002
+                                                                                                    ShapeLine4:
+                                                                                                        type: line
+                                                                                                        origin:
+                                                                                                            - 199.33490790000002
+                                                                                                            - -116.44434650000002
+                                                                                                        end:
+                                                                                                            - 199.06788350000002
+                                                                                                            - -133.44224920000002
+                                                                                                origin:
+                                                                                                    - 0
+                                                                                                    - 0
+                                                                                        origin:
+                                                                                            - 0
+                                                                                            - 0
+                                                                                    b:
+                                                                                        paths:
+                                                                                            ShapeLine1:
+                                                                                                type: line
+                                                                                                origin:
+                                                                                                    - 199.35061520000002
+                                                                                                    - -115.44446980000001
+                                                                                                end:
+                                                                                                    - 217.3483946
+                                                                                                    - -115.7272015
+                                                                                            ShapeLine2:
+                                                                                                type: line
+                                                                                                origin:
+                                                                                                    - 217.3483946
+                                                                                                    - -115.7272015
+                                                                                                end:
+                                                                                                    - 217.615419
+                                                                                                    - -98.72929880000001
+                                                                                            ShapeLine3:
+                                                                                                type: line
+                                                                                                origin:
+                                                                                                    - 217.615419
+                                                                                                    - -98.72929880000001
+                                                                                                end:
+                                                                                                    - 199.61763960000002
+                                                                                                    - -98.44656710000001
+                                                                                            ShapeLine4:
+                                                                                                type: line
+                                                                                                origin:
+                                                                                                    - 199.61763960000002
+                                                                                                    - -98.44656710000001
+                                                                                                end:
+                                                                                                    - 199.35061520000002
+                                                                                                    - -115.44446980000001
+                                                                                        origin:
+                                                                                            - 0
+                                                                                            - 0
+                                                                                origin:
+                                                                                    - 0
+                                                                                    - 0
+                                                                            b:
+                                                                                paths:
+                                                                                    ShapeLine1:
+                                                                                        type: line
+                                                                                        origin:
+                                                                                            - 217.71212490000002
+                                                                                            - -156.2379124
+                                                                                        end:
+                                                                                            - 235.7099043
+                                                                                            - -156.5206441
+                                                                                    ShapeLine2:
+                                                                                        type: line
+                                                                                        origin:
+                                                                                            - 235.7099043
+                                                                                            - -156.5206441
+                                                                                        end:
+                                                                                            - 235.9769287
+                                                                                            - -139.5227414
+                                                                                    ShapeLine3:
+                                                                                        type: line
+                                                                                        origin:
+                                                                                            - 235.9769287
+                                                                                            - -139.5227414
+                                                                                        end:
+                                                                                            - 217.97914930000002
+                                                                                            - -139.2400097
+                                                                                    ShapeLine4:
+                                                                                        type: line
+                                                                                        origin:
+                                                                                            - 217.97914930000002
+                                                                                            - -139.2400097
+                                                                                        end:
+                                                                                            - 217.71212490000002
+                                                                                            - -156.2379124
+                                                                                origin:
+                                                                                    - 0
+                                                                                    - 0
+                                                                        origin:
+                                                                            - 0
+                                                                            - 0
+                                                                    b:
+                                                                        paths:
+                                                                            ShapeLine1:
+                                                                                type: line
+                                                                                origin:
+                                                                                    - 217.99485660000002
+                                                                                    - -138.240133
+                                                                                end:
+                                                                                    - 235.992636
+                                                                                    - -138.52286469999999
+                                                                            ShapeLine2:
+                                                                                type: line
+                                                                                origin:
+                                                                                    - 235.992636
+                                                                                    - -138.52286469999999
+                                                                                end:
+                                                                                    - 236.2596604
+                                                                                    - -121.52496199999999
+                                                                            ShapeLine3:
+                                                                                type: line
+                                                                                origin:
+                                                                                    - 236.2596604
+                                                                                    - -121.52496199999999
+                                                                                end:
+                                                                                    - 218.26188100000002
+                                                                                    - -121.24223029999999
+                                                                            ShapeLine4:
+                                                                                type: line
+                                                                                origin:
+                                                                                    - 218.26188100000002
+                                                                                    - -121.24223029999999
+                                                                                end:
+                                                                                    - 217.99485660000002
+                                                                                    - -138.240133
+                                                                        origin:
+                                                                            - 0
+                                                                            - 0
+                                                                origin:
+                                                                    - 0
+                                                                    - 0
+                                                            b:
+                                                                paths:
+                                                                    ShapeLine1:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 218.27758830000002
+                                                                            - -120.24235359999999
+                                                                        end:
+                                                                            - 236.2753677
+                                                                            - -120.52508529999999
+                                                                    ShapeLine2:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 236.2753677
+                                                                            - -120.52508529999999
+                                                                        end:
+                                                                            - 236.5423921
+                                                                            - -103.52718259999999
+                                                                    ShapeLine3:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 236.5423921
+                                                                            - -103.52718259999999
+                                                                        end:
+                                                                            - 218.54461270000002
+                                                                            - -103.24445089999999
+                                                                    ShapeLine4:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 218.54461270000002
+                                                                            - -103.24445089999999
+                                                                        end:
+                                                                            - 218.27758830000002
+                                                                            - -120.24235359999999
+                                                                origin:
+                                                                    - 0
+                                                                    - 0
+                                                        origin:
+                                                            - 0
+                                                            - 0
+                                                    b:
+                                                        paths:
+                                                            ShapeLine1:
+                                                                type: line
+                                                                origin:
+                                                                    - 236.65323460000002
+                                                                    - -160.1359073
+                                                                end:
+                                                                    - 254.651014
+                                                                    - -160.418639
+                                                            ShapeLine2:
+                                                                type: line
+                                                                origin:
+                                                                    - 254.651014
+                                                                    - -160.418639
+                                                                end:
+                                                                    - 254.9180384
+                                                                    - -143.42073630000002
+                                                            ShapeLine3:
+                                                                type: line
+                                                                origin:
+                                                                    - 254.9180384
+                                                                    - -143.42073630000002
+                                                                end:
+                                                                    - 236.92025900000002
+                                                                    - -143.13800460000002
+                                                            ShapeLine4:
+                                                                type: line
+                                                                origin:
+                                                                    - 236.92025900000002
+                                                                    - -143.13800460000002
+                                                                end:
+                                                                    - 236.65323460000002
+                                                                    - -160.1359073
+                                                        origin:
+                                                            - 0
+                                                            - 0
+                                                origin:
+                                                    - 0
+                                                    - 0
+                                            b:
+                                                paths:
+                                                    ShapeLine1:
+                                                        type: line
+                                                        origin:
+                                                            - 236.93596630000002
+                                                            - -142.1381279
+                                                        end:
+                                                            - 254.9337457
+                                                            - -142.4208596
+                                                    ShapeLine2:
+                                                        type: line
+                                                        origin:
+                                                            - 254.9337457
+                                                            - -142.4208596
+                                                        end:
+                                                            - 255.2007701
+                                                            - -125.4229569
+                                                    ShapeLine3:
+                                                        type: line
+                                                        origin:
+                                                            - 255.2007701
+                                                            - -125.4229569
+                                                        end:
+                                                            - 237.20299070000002
+                                                            - -125.1402252
+                                                    ShapeLine4:
+                                                        type: line
+                                                        origin:
+                                                            - 237.20299070000002
+                                                            - -125.1402252
+                                                        end:
+                                                            - 236.93596630000002
+                                                            - -142.1381279
+                                                origin:
+                                                    - 0
+                                                    - 0
+                                        origin:
+                                            - 0
+                                            - 0
+                                    b:
+                                        paths:
+                                            ShapeLine1:
+                                                type: line
+                                                origin:
+                                                    - 237.21869800000002
+                                                    - -124.1403485
+                                                end:
+                                                    - 255.2164774
+                                                    - -124.4230802
+                                            ShapeLine2:
+                                                type: line
+                                                origin:
+                                                    - 255.2164774
+                                                    - -124.4230802
+                                                end:
+                                                    - 255.4835018
+                                                    - -107.4251775
+                                            ShapeLine3:
+                                                type: line
+                                                origin:
+                                                    - 255.4835018
+                                                    - -107.4251775
+                                                end:
+                                                    - 237.48572240000001
+                                                    - -107.1424458
+                                            ShapeLine4:
+                                                type: line
+                                                origin:
+                                                    - 237.48572240000001
+                                                    - -107.1424458
+                                                end:
+                                                    - 237.21869800000002
+                                                    - -124.1403485
+                                        origin:
+                                            - 0
+                                            - 0
+                                origin:
+                                    - 0
+                                    - 0
+                            b:
+                                paths:
+                                    ShapeLine1:
+                                        type: line
+                                        origin:
+                                            - 217.24561760000003
+                                            - -185.9342484
+                                        end:
+                                            - 235.24339700000002
+                                            - -186.2169801
+                                    ShapeLine2:
+                                        type: line
+                                        origin:
+                                            - 235.24339700000002
+                                            - -186.2169801
+                                        end:
+                                            - 235.5104214
+                                            - -169.2190774
+                                    ShapeLine3:
+                                        type: line
+                                        origin:
+                                            - 235.5104214
+                                            - -169.2190774
+                                        end:
+                                            - 217.51264200000003
+                                            - -168.9363457
+                                    ShapeLine4:
+                                        type: line
+                                        origin:
+                                            - 217.51264200000003
+                                            - -168.9363457
+                                        end:
+                                            - 217.24561760000003
+                                            - -185.9342484
+                                origin:
+                                    - 0
+                                    - 0
+                        origin:
+                            - 0
+                            - 0
+                    b:
+                        paths:
+                            ShapeLine1:
+                                type: line
+                                origin:
+                                    - 236.24327360000004
+                                    - -186.2326874
+                                end:
+                                    - 254.24105300000002
+                                    - -186.5154191
+                            ShapeLine2:
+                                type: line
+                                origin:
+                                    - 254.24105300000002
+                                    - -186.5154191
+                                end:
+                                    - 254.50807740000002
+                                    - -169.5175164
+                            ShapeLine3:
+                                type: line
+                                origin:
+                                    - 254.50807740000002
+                                    - -169.5175164
+                                end:
+                                    - 236.51029800000003
+                                    - -169.2347847
+                            ShapeLine4:
+                                type: line
+                                origin:
+                                    - 236.51029800000003
+                                    - -169.2347847
+                                end:
+                                    - 236.24327360000004
+                                    - -186.2326874
+                        origin:
+                            - 0
+                            - 0
+                origin:
+                    - 0
+                    - 0
+            b:
+                paths:
+                    ShapeLine1:
+                        type: line
+                        origin:
+                            - 256.115783
+                            - -182.7548417
+                        end:
+                            - 273.4271265
+                            - -187.68610759999999
+                    ShapeLine2:
+                        type: line
+                        origin:
+                            - 273.4271265
+                            - -187.68610759999999
+                        end:
+                            - 278.0844332
+                            - -171.3365053
+                    ShapeLine3:
+                        type: line
+                        origin:
+                            - 278.0844332
+                            - -171.3365053
+                        end:
+                            - 260.7730897
+                            - -166.4052394
+                    ShapeLine4:
+                        type: line
+                        origin:
+                            - 260.7730897
+                            - -166.4052394
+                        end:
+                            - 256.115783
+                            - -182.7548417
+                origin:
+                    - 0
+                    - 0
+        origin:
+            - 0
+            - 0
+units: mm
+origin:
+    - 0
+    - 0

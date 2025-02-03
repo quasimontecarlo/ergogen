@@ -17,4 +17,8 @@ module.exports = {
     slider: require('./slider'),
     trrs: require('./trrs'),
     via: require('./via'),
+    mcu_nice_nano: require('./mcu_nice_nano'),
+    reset_switch_tht_top: require('./reset_switch_tht_top'),
+    power_switch_smd_side: require('./power_switch_smd_side'),
+    bat: require('./bat'),
 }
