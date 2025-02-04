@@ -143,10 +143,9 @@ pcbs:
         what: mcu_nice_nano
         where:
           - ref: matrix_inner_home
-            shift: [10cx, 5cx]
+            shift: [1.15cx, 0.425cy]
         params:
           reversible: true
-          only_required_jumpers: true
           P7: matrix_pinky_top
           P7_label: P7
           P18: matrix_ring_top
@@ -188,7 +187,7 @@ pcbs:
         what: reset_switch_tht_top
         where:
           ref: matrix_inner_bottom
-          shift: [30, 0]
+          shift: [1.15cx, -0.20cy]
         params:
           reversible: true
           from: GND
@@ -197,9 +196,28 @@ pcbs:
         what: power_switch_smd_side
         where:
           ref: matrix_inner_bottom
-          shift: [40, 0]
+          shift: [1.8cx, -0.20cy]
         params:
           reversible: true
           from: BAT_P
           to: RAW
-
+      grndpad:
+        what: pad
+        where:
+          ref: matrix_inner_bottom
+          shift: [1.05cx, 0.15cy]
+        params:
+          width: 1.5
+          height: 1.5
+          text: BAT_N
+          net: GND
+      pospad:
+        what: pad
+        where:
+          ref: matrix_inner_bottom
+          shift: [1.35cx, 0.15cy]
+        params:
+          width: 1.5
+          height: 1.5
+          text: BAT_P
+          net: BAT_P
