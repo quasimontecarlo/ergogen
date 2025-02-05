@@ -28,9 +28,7 @@ matrix_pinky_bottom:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -67,9 +65,7 @@ matrix_pinky_bottom:
         col:
             key:
                 splay: 0.25cx
-            rows:
-                home:
-                    column_net: 2
+            rows: {}
             name: pinky
         row: bottom
         bind:
@@ -102,15 +98,12 @@ matrix_pinky_home:
         asym: both
         colrow: pinky_home
         name: matrix_pinky_home
-        column_net: 2
         zone:
             columns:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -147,9 +140,7 @@ matrix_pinky_home:
         col:
             key:
                 splay: 0.25cx
-            rows:
-                home:
-                    column_net: 2
+            rows: {}
             name: pinky
         row: home
         bind:
@@ -187,9 +178,7 @@ matrix_pinky_top:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -226,9 +215,7 @@ matrix_pinky_top:
         col:
             key:
                 splay: 0.25cx
-            rows:
-                home:
-                    column_net: 2
+            rows: {}
             name: pinky
         row: top
         bind:
@@ -266,9 +253,7 @@ matrix_ring_bottom:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -345,9 +330,7 @@ matrix_ring_home:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -424,9 +407,7 @@ matrix_ring_top:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -503,9 +484,7 @@ matrix_middle_bottom:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -582,9 +561,7 @@ matrix_middle_home:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -661,9 +638,7 @@ matrix_middle_top:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -740,9 +715,7 @@ matrix_index_bottom:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -817,9 +790,7 @@ matrix_index_home:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -894,9 +865,7 @@ matrix_index_top:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -971,9 +940,7 @@ matrix_inner_bottom:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -1048,9 +1015,7 @@ matrix_inner_home:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -1125,9 +1090,7 @@ matrix_inner_top:
                 pinky:
                     key:
                         splay: 0.25cx
-                    rows:
-                        home:
-                            column_net: 2
+                    rows: {}
                     name: pinky
                 ring:
                     key:
@@ -1173,8 +1136,8 @@ matrix_inner_top:
             - 10
             - 10
 thumb_innit:
-    x: 226.37801950000002
-    'y': -177.5766629
+    x: 226.43456580000003
+    'y': -173.977107
     r: -0.8999999999999995
     meta:
         stagger: 0
@@ -1188,7 +1151,10 @@ thumb_innit:
             - 0
             - 0
         rotate: 0
-        adjust: {}
+        adjust:
+            shift:
+                - 0cx
+                - 0.2cx
         width: 18
         height: 18
         padding: 19
@@ -1202,20 +1168,33 @@ thumb_innit:
                 innit:
                     key:
                         name: thumb_innit
+                        adjust:
+                            shift:
+                                - 0cx
+                                - 0.2cx
                     rows: {}
                     name: innit
                 middle:
                     key:
                         name: thumb_middle
+                        adjust:
+                            shift:
+                                - 0cx
+                                - 0.10cx
                     rows: {}
                     name: middle
                 reachy:
                     key:
                         spread: cx
                         splay: -15
+                        rotate: 90
                         origin:
                             - 0.35cx
                             - '-0.75cx'
+                        adjust:
+                            shift:
+                                - '-0.05cx'
+                                - 0cx
                         name: thumb_reachy
                     rows: {}
                     name: reachy
@@ -1223,6 +1202,10 @@ thumb_innit:
         col:
             key:
                 name: thumb_innit
+                adjust:
+                    shift:
+                        - 0cx
+                        - 0.2cx
             rows: {}
             name: innit
         row: default
@@ -1232,8 +1215,8 @@ thumb_innit:
             - 0
             - 0
 thumb_middle:
-    x: 245.37567550000003
-    'y': -177.8751019
+    x: 245.40394870000003
+    'y': -176.075324
     r: -0.8999999999999995
     meta:
         stagger: 0
@@ -1247,7 +1230,10 @@ thumb_middle:
             - 0
             - 0
         rotate: 0
-        adjust: {}
+        adjust:
+            shift:
+                - 0cx
+                - 0.10cx
         width: 18
         height: 18
         padding: 19
@@ -1261,20 +1247,33 @@ thumb_middle:
                 innit:
                     key:
                         name: thumb_innit
+                        adjust:
+                            shift:
+                                - 0cx
+                                - 0.2cx
                     rows: {}
                     name: innit
                 middle:
                     key:
                         name: thumb_middle
+                        adjust:
+                            shift:
+                                - 0cx
+                                - 0.10cx
                     rows: {}
                     name: middle
                 reachy:
                     key:
                         spread: cx
                         splay: -15
+                        rotate: 90
                         origin:
                             - 0.35cx
                             - '-0.75cx'
+                        adjust:
+                            shift:
+                                - '-0.05cx'
+                                - 0cx
                         name: thumb_reachy
                     rows: {}
                     name: reachy
@@ -1282,6 +1281,10 @@ thumb_middle:
         col:
             key:
                 name: thumb_middle
+                adjust:
+                    shift:
+                        - 0cx
+                        - 0.10cx
             rows: {}
             name: middle
         row: default
@@ -1291,9 +1294,9 @@ thumb_middle:
             - 0
             - 0
 thumb_reachy:
-    x: 267.1001081
-    'y': -177.0456735
-    r: -15.899999999999999
+    x: 266.8535448
+    'y': -177.91124069999998
+    r: 74.1
     meta:
         stagger: 0
         spread: 18
@@ -1305,8 +1308,11 @@ thumb_reachy:
         shift:
             - 0
             - 0
-        rotate: 0
-        adjust: {}
+        rotate: 90
+        adjust:
+            shift:
+                - '-0.05cx'
+                - 0cx
         width: 18
         height: 18
         padding: 19
@@ -1320,20 +1326,33 @@ thumb_reachy:
                 innit:
                     key:
                         name: thumb_innit
+                        adjust:
+                            shift:
+                                - 0cx
+                                - 0.2cx
                     rows: {}
                     name: innit
                 middle:
                     key:
                         name: thumb_middle
+                        adjust:
+                            shift:
+                                - 0cx
+                                - 0.10cx
                     rows: {}
                     name: middle
                 reachy:
                     key:
                         spread: cx
                         splay: -15
+                        rotate: 90
                         origin:
                             - 0.35cx
                             - '-0.75cx'
+                        adjust:
+                            shift:
+                                - '-0.05cx'
+                                - 0cx
                         name: thumb_reachy
                     rows: {}
                     name: reachy
@@ -1342,9 +1361,14 @@ thumb_reachy:
             key:
                 spread: cx
                 splay: -15
+                rotate: 90
                 origin:
                     - 0.35cx
                     - '-0.75cx'
+                adjust:
+                    shift:
+                        - '-0.05cx'
+                        - 0cx
                 name: thumb_reachy
             rows: {}
             name: reachy

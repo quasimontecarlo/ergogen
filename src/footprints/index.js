@@ -21,4 +21,5 @@ module.exports = {
     reset_switch_tht_top: require('./reset_switch_tht_top'),
     power_switch_smd_side: require('./power_switch_smd_side'),
     bat: require('./bat'),
+    switch_choc_v1_v2: require('./switch_choc_v1_v2'),
 }
