@@ -61,54 +61,60 @@ outlines:
     - what: polygon
       points:
         - ref: thumb_reachy
-          shift: [0.49cx, 0.749cy]
+          shift: [0.74cx, -0.54cy]
         - ref: thumb_reachy
-          shift: [0.49cx, -0.749cy]
+          shift: [-0.79cx, -0.54cy]
+        - ref: thumb_reachy
+          shift: [-0.79cx, 0.54cy]
+        - ref: thumb_reachy
+          shift: [-0.58cx, 0.54cy]
         - ref: thumb_middle
-          shift: [0.49cx, -0.49cy]
+          shift: [0.54cx, -0.54cy]
+        - ref: thumb_middle
+          shift: [-0.54cx, -0.54cy]
         - ref: thumb_innit
-          shift: [0.49cx, -0.49cy]
+          shift: [0.515cx, -0.54cy]
         - ref: thumb_innit
-          shift: [-0.49cx, -0.49cy]
+          shift: [-0.54cx, -0.54cy]
         - ref: matrix_index_bottom
-          shift: [-0.49cx, -0.221cy]
+          shift: [-0.54cx, -0.271cy]
         - ref: matrix_ring_bottom
-          shift: [+0.49cx, -0.195cy]
+          shift: [+0.54cx, -0.245cy]
         - ref: matrix_ring_bottom
-          shift: [+0.49cx, -0.49cy]
+          shift: [+0.54cx, -0.54cy]
         - ref: matrix_ring_bottom
-          shift: [-0.59cx, -0.49cy]
+          shift: [-0.54cx, -0.54cy]
         - ref: matrix_pinky_bottom
-          shift: [+0.49cx, -0.49cy]
+          shift: [+0.54cx, -0.54cy]
         - ref: matrix_pinky_bottom
-          shift: [-0.49cx, -0.49cy]
+          shift: [-0.54cx, -0.54cy]
         - ref: matrix_pinky_top
-          shift: [-0.49cx, 0.49cy]
+          shift: [-0.54cx, 0.54cy]
         - ref: matrix_pinky_top
-          shift: [0.685cx, 0.49cy]
+          shift: [0.635cx, 0.54cy]
         - ref: matrix_ring_top
-          shift: [-0.49cx, 0.49cy]
+          shift: [-0.54cx, 0.54cy]
         - ref: matrix_ring_top
-          shift: [0.7cx, 0.49cy]
+          shift: [0.655cx, 0.54cy]
         - ref: matrix_middle_top
-          shift: [-0.49cx, 0.49cy]
+          shift: [-0.54cx, 0.54cy]
         - ref: matrix_middle_top
-          shift: [0.49cx, 0.49cy]
+          shift: [0.54cx, 0.54cy]
         - ref: matrix_index_top
-          shift: [-0.565cx, 0.49cy]
+          shift: [-0.517cx, 0.54cy]
         - ref: matrix_index_top
-          shift: [0.49cx, 0.49cy]
+          shift: [0.54cx, 0.54cy]
         - ref: matrix_index_top
-          shift: [0.49cx, 0.49cy]
+          shift: [0.54cx, 0.54cy]
         - ref: matrix_inner_top
-          shift: [-0.565cx, 0.49cy]
+          shift: [-0.515cx, 0.54cy]
         - ref: matrix_inner_top
-          shift: [0.49cx, 0.49cy]
+          shift: [0.54cx, 0.54cy]
         - ref: matrix_inner_home
-          shift: [0.49cx, 1.4cy]
+          shift: [0.54cx, 1.45cy]
         - ref: matrix_inner_home
-          shift: [1.85cx, 1.4cy]
-      fillet: 1
+          shift: [1.826cx, 1.45cy]
+      fillet: 0
 
   keycaps:
     - what: rectangle
@@ -152,7 +158,7 @@ pcbs:
         what: mcu_nice_nano
         where:
           - ref: matrix_inner_home
-            shift: [1.15cx, 0.425cy]
+            shift: [1.1715cx, 0.38cy]
         params:
           reversible: true
           show_silk_labels: true
@@ -160,7 +166,7 @@ pcbs:
           show_instructions: false
           use_rectangular_jumpers: false
           P7: matrix_pinky_top
-          P7_label: P2
+          P7_label: P21
           P18: matrix_ring_top
           P18_label: P18
           P19: matrix_middle_top
@@ -190,7 +196,7 @@ pcbs:
           P6: matrix_inner_bottom
           P6_label: P6
           P0: thumb_innit
-          P0_label: P7
+          P0_label: P2
           P8: thumb_middle
           P8_label: P8
           P9: thumb_reachy
@@ -200,7 +206,8 @@ pcbs:
         what: reset_switch_tht_top
         where:
           ref: matrix_inner_bottom
-          shift: [1.15cx, -0.20cy]
+          shift: [1.599cx, 0.1cy]
+          rotate: 90
         params:
           reversible: true
           from: GND
@@ -208,8 +215,9 @@ pcbs:
       power:
         what: power_switch_smd_side
         where:
-          ref: matrix_inner_bottom
-          shift: [1.8cx, -0.20cy]
+          ref: matrix_inner_top
+          shift: [1.17cx, 0.3cy]
+          rotate: 90
         params:
           reversible: true
           from: BAT_P
@@ -218,7 +226,7 @@ pcbs:
         what: pad
         where:
           ref: matrix_inner_bottom
-          shift: [1.05cx, 0.15cy]
+          shift: [1cx, 0.1cy]
         params:
           width: 1.5
           height: 1.5
@@ -228,10 +236,17 @@ pcbs:
         what: pad
         where:
           ref: matrix_inner_bottom
-          shift: [1.35cx, 0.15cy]
+          shift: [1.35cx, 0.1cy]
         params:
           width: 1.5
           height: 1.5
           text: BAT_P
+          net: BAT_P
+      batvia:
+        what: via
+        where: 
+          ref: matrix_inner_bottom
+          shift: [1.175cx, -0.025cy]
+        params:
           net: BAT_P
 
