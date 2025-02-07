@@ -4,8 +4,6 @@ meta:
   version: 0.1
   author: quasimontecarlo
 units:
-  via_size: 0.56
-  via_drill: 
   center_shift_x: 170
   center_shift_y: -165
 
@@ -114,7 +112,7 @@ outlines:
           shift: [0.54cx, 1.45cy]
         - ref: matrix_inner_home
           shift: [1.826cx, 1.45cy]
-      fillet: 0
+      fillet: 0.25
 
   keycaps:
     - what: rectangle
@@ -166,7 +164,7 @@ pcbs:
           show_instructions: false
           use_rectangular_jumpers: false
           P7: matrix_pinky_top
-          P7_label: P21
+          P7_label: P15
           P18: matrix_ring_top
           P18_label: P18
           P19: matrix_middle_top
@@ -176,27 +174,27 @@ pcbs:
           P21: matrix_inner_top
           P21_label: P1
           P15: matrix_pinky_home
-          P15_label: P15
+          P15_label: P2
           P14: matrix_ring_home
-          P14_label: P14
+          P14_label: P3
           P16: matrix_middle_home
-          P16_label: P16
+          P16_label: P10
           P10: matrix_index_home
-          P10_label: P10
+          P10_label: P16
           P1: matrix_inner_home
-          P1_label: P21
+          P1_label: P14
           P2: matrix_pinky_bottom
-          P2_label: P2
+          P2_label: P4
           P3: matrix_ring_bottom
-          P3_label: P3
+          P3_label: P5
           P4: matrix_middle_bottom
-          P4_label: P4
+          P4_label: P6
           P5: matrix_index_bottom
           P5_label: P5
           P6: matrix_inner_bottom
           P6_label: P6
           P0: thumb_innit
-          P0_label: P2
+          P0_label: P21
           P8: thumb_middle
           P8_label: P8
           P9: thumb_reachy
@@ -230,6 +228,7 @@ pcbs:
         params:
           width: 1.5
           height: 1.5
+          align: bottom
           text: BAT_N
           net: GND
       pospad:
@@ -240,6 +239,7 @@ pcbs:
         params:
           width: 1.5
           height: 1.5
+          align: bottom
           text: BAT_P
           net: BAT_P
       batvia:
