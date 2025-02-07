@@ -9,6 +9,5 @@ $default_height: 18
 $default_width: 18
 $default_padding: 19
 $default_autobind: 10
-via_size: 0.56
 center_shift_x: 170
 center_shift_y: -165

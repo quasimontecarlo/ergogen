@@ -161,44 +161,65 @@ pcbs:
           reversible: true
           show_silk_labels: true
           show_via_labels: true
-          show_instructions: false
+          show_instructions: true
           use_rectangular_jumpers: false
-          P7: matrix_pinky_top
-          P7_label: P15
-          P18: matrix_ring_top
-          P18_label: P18
-          P19: matrix_middle_top
-          P19_label: P19
-          P20: matrix_index_top
+          include_extra_pins: true
+          only_required_jumpers: true
+          #RAW: 
+          #GND: 
+          #RST: 
+          #VCC:
+    
+          P21_label: P21
           P20_label: P20
-          P21: matrix_inner_top
-          P21_label: P1
-          P15: matrix_pinky_home
-          P15_label: P2
-          P14: matrix_ring_home
-          P14_label: P3
-          P16: matrix_middle_home
-          P16_label: P10
-          P10: matrix_index_home
-          P10_label: P16
-          P1: matrix_inner_home
-          P1_label: P14
-          P2: matrix_pinky_bottom
-          P2_label: P4
-          P3: matrix_ring_bottom
-          P3_label: P5
-          P4: matrix_middle_bottom
-          P4_label: P6
-          P5: matrix_index_bottom
+          P19_label: P19
+          P18_label: P18
+          P15_label: P15
+          P14_label: P14
+          P16_label: P16
+          P10_label: P10
+
+          #P1_label: P1
+          #P0_label: P0
+          P2_label: P2
+          P3_label: P3
+          P4_label: P4 
           P5_label: P5
-          P6: matrix_inner_bottom
-          P6_label: P6
-          P0: thumb_innit
-          P0_label: P21
-          P8: thumb_middle
+          P6_label: P6 
+          P7_label: P7
           P8_label: P8
-          P9: thumb_reachy
           P9_label: P9
+
+          P101_label: P101
+          P102_label: P102
+          P107_label: P107 
+
+
+          P21: matrix_inner_top
+          P20: matrix_index_top 
+          P19: matrix_middle_top
+          P18: matrix_ring_top 
+          P15: matrix_pinky_top
+          P14: matrix_inner_home
+          P16: matrix_index_home
+          P10: matrix_middle_home 
+
+          #P1: matrix_ring_home 
+          #P0: matrix_pinky_home
+          P2: matrix_ring_home 
+          P3: matrix_pinky_home
+          P4: matrix_inner_bottom 
+          P5: matrix_index_bottom
+          P6: matrix_middle_bottom 
+          P7: matrix_ring_bottom 
+          P8: matrix_pinky_bottom 
+          #P9:
+
+          P101: thumb_innit
+          P102: thumb_middle
+          P107: thumb_reachy 
+
+
 
       reset:
         what: reset_switch_tht_top

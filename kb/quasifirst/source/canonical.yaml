@@ -4,8 +4,6 @@ meta:
     version: 0.1
     author: quasimontecarlo
 units:
-    via_size: 0.56
-    via_drill: null
     center_shift_x: 170
     center_shift_y: -165
 points:
@@ -91,124 +89,139 @@ outlines:
                 -
                     ref: thumb_reachy
                     shift:
-                        - 0.49cx
-                        - 0.749cy
+                        - 0.74cx
+                        - '-0.54cy'
                 -
                     ref: thumb_reachy
                     shift:
-                        - 0.49cx
-                        - '-0.749cy'
+                        - '-0.79cx'
+                        - '-0.54cy'
+                -
+                    ref: thumb_reachy
+                    shift:
+                        - '-0.79cx'
+                        - 0.54cy
+                -
+                    ref: thumb_reachy
+                    shift:
+                        - '-0.58cx'
+                        - 0.54cy
                 -
                     ref: thumb_middle
                     shift:
-                        - 0.49cx
-                        - '-0.49cy'
+                        - 0.54cx
+                        - '-0.54cy'
+                -
+                    ref: thumb_middle
+                    shift:
+                        - '-0.54cx'
+                        - '-0.54cy'
                 -
                     ref: thumb_innit
                     shift:
-                        - 0.49cx
-                        - '-0.49cy'
+                        - 0.515cx
+                        - '-0.54cy'
                 -
                     ref: thumb_innit
                     shift:
-                        - '-0.49cx'
-                        - '-0.49cy'
+                        - '-0.54cx'
+                        - '-0.54cy'
                 -
                     ref: matrix_index_bottom
                     shift:
-                        - '-0.49cx'
-                        - '-0.221cy'
+                        - '-0.54cx'
+                        - '-0.271cy'
                 -
                     ref: matrix_ring_bottom
                     shift:
-                        - +0.49cx
-                        - '-0.195cy'
+                        - +0.54cx
+                        - '-0.245cy'
                 -
                     ref: matrix_ring_bottom
                     shift:
-                        - +0.49cx
-                        - '-0.49cy'
+                        - +0.54cx
+                        - '-0.54cy'
                 -
                     ref: matrix_ring_bottom
                     shift:
-                        - '-0.59cx'
-                        - '-0.49cy'
+                        - '-0.54cx'
+                        - '-0.54cy'
                 -
                     ref: matrix_pinky_bottom
                     shift:
-                        - +0.49cx
-                        - '-0.49cy'
+                        - +0.54cx
+                        - '-0.54cy'
                 -
                     ref: matrix_pinky_bottom
                     shift:
-                        - '-0.49cx'
-                        - '-0.49cy'
+                        - '-0.54cx'
+                        - '-0.54cy'
                 -
                     ref: matrix_pinky_top
                     shift:
-                        - '-0.49cx'
-                        - 0.49cy
+                        - '-0.54cx'
+                        - 0.54cy
                 -
                     ref: matrix_pinky_top
                     shift:
-                        - 0.685cx
-                        - 0.49cy
+                        - 0.635cx
+                        - 0.54cy
                 -
                     ref: matrix_ring_top
                     shift:
-                        - '-0.49cx'
-                        - 0.49cy
+                        - '-0.54cx'
+                        - 0.54cy
                 -
                     ref: matrix_ring_top
                     shift:
-                        - 0.7cx
-                        - 0.49cy
+                        - 0.655cx
+                        - 0.54cy
                 -
                     ref: matrix_middle_top
                     shift:
-                        - '-0.49cx'
-                        - 0.49cy
+                        - '-0.54cx'
+                        - 0.54cy
                 -
                     ref: matrix_middle_top
                     shift:
-                        - 0.49cx
-                        - 0.49cy
+                        - 0.54cx
+                        - 0.54cy
                 -
                     ref: matrix_index_top
                     shift:
-                        - '-0.565cx'
-                        - 0.49cy
+                        - '-0.517cx'
+                        - 0.54cy
                 -
                     ref: matrix_index_top
                     shift:
-                        - 0.49cx
-                        - 0.49cy
+                        - 0.54cx
+                        - 0.54cy
                 -
                     ref: matrix_index_top
                     shift:
-                        - 0.49cx
-                        - 0.49cy
+                        - 0.54cx
+                        - 0.54cy
                 -
                     ref: matrix_inner_top
                     shift:
-                        - '-0.565cx'
-                        - 0.49cy
+                        - '-0.515cx'
+                        - 0.54cy
                 -
                     ref: matrix_inner_top
                     shift:
-                        - 0.49cx
-                        - 0.49cy
+                        - 0.54cx
+                        - 0.54cy
                 -
                     ref: matrix_inner_home
                     shift:
-                        - 0.49cx
-                        - 1.4cy
+                        - 0.54cx
+                        - 1.45cy
                 -
                     ref: matrix_inner_home
                     shift:
-                        - 1.85cx
-                        - 1.4cy
-            fillet: 1
+                        - 1.826cx
+                        - 1.45cy
+            fillet: 0.25
     keycaps:
         -
             what: rectangle
@@ -258,57 +271,61 @@ pcbs:
                     -
                         ref: matrix_inner_home
                         shift:
-                            - 1.15cx
-                            - 0.425cy
+                            - 1.1715cx
+                            - 0.38cy
                 params:
                     reversible: true
                     show_silk_labels: true
                     show_via_labels: true
-                    show_instructions: false
+                    show_instructions: true
                     use_rectangular_jumpers: false
-                    P7: matrix_pinky_top
-                    P7_label: P2
-                    P18: matrix_ring_top
-                    P18_label: P18
-                    P19: matrix_middle_top
-                    P19_label: P19
-                    P20: matrix_index_top
+                    include_extra_pins: true
+                    only_required_jumpers: true
+                    P21_label: P21
                     P20_label: P20
-                    P21: matrix_inner_top
-                    P21_label: P1
-                    P15: matrix_pinky_home
+                    P19_label: P19
+                    P18_label: P18
                     P15_label: P15
-                    P14: matrix_ring_home
                     P14_label: P14
-                    P16: matrix_middle_home
                     P16_label: P16
-                    P10: matrix_index_home
                     P10_label: P10
-                    P1: matrix_inner_home
-                    P1_label: P21
-                    P2: matrix_pinky_bottom
                     P2_label: P2
-                    P3: matrix_ring_bottom
                     P3_label: P3
-                    P4: matrix_middle_bottom
                     P4_label: P4
-                    P5: matrix_index_bottom
                     P5_label: P5
-                    P6: matrix_inner_bottom
                     P6_label: P6
-                    P0: thumb_innit
-                    P0_label: P7
-                    P8: thumb_middle
+                    P7_label: P7
                     P8_label: P8
-                    P9: thumb_reachy
                     P9_label: P9
+                    P101_label: P101
+                    P102_label: P102
+                    P107_label: P107
+                    P21: matrix_inner_top
+                    P20: matrix_index_top
+                    P19: matrix_middle_top
+                    P18: matrix_ring_top
+                    P15: matrix_pinky_top
+                    P14: matrix_inner_home
+                    P16: matrix_index_home
+                    P10: matrix_middle_home
+                    P2: matrix_ring_home
+                    P3: matrix_pinky_home
+                    P4: matrix_inner_bottom
+                    P5: matrix_index_bottom
+                    P6: matrix_middle_bottom
+                    P7: matrix_ring_bottom
+                    P8: matrix_pinky_bottom
+                    P101: thumb_innit
+                    P102: thumb_middle
+                    P107: thumb_reachy
             reset:
                 what: reset_switch_tht_top
                 where:
                     ref: matrix_inner_bottom
                     shift:
-                        - 1.15cx
-                        - '-0.20cy'
+                        - 1.599cx
+                        - 0.1cy
+                    rotate: 90
                 params:
                     reversible: true
                     from: GND
@@ -316,10 +333,11 @@ pcbs:
             power:
                 what: power_switch_smd_side
                 where:
-                    ref: matrix_inner_bottom
+                    ref: matrix_inner_top
                     shift:
-                        - 1.8cx
-                        - '-0.20cy'
+                        - 1.17cx
+                        - 0.3cy
+                    rotate: 90
                 params:
                     reversible: true
                     from: BAT_P
@@ -329,11 +347,12 @@ pcbs:
                 where:
                     ref: matrix_inner_bottom
                     shift:
-                        - 1.05cx
-                        - 0.15cy
+                        - 1cx
+                        - 0.1cy
                 params:
                     width: 1.5
                     height: 1.5
+                    align: bottom
                     text: BAT_N
                     net: GND
             pospad:
@@ -342,9 +361,19 @@ pcbs:
                     ref: matrix_inner_bottom
                     shift:
                         - 1.35cx
-                        - 0.15cy
+                        - 0.1cy
                 params:
                     width: 1.5
                     height: 1.5
+                    align: bottom
                     text: BAT_P
+                    net: BAT_P
+            batvia:
+                what: via
+                where:
+                    ref: matrix_inner_bottom
+                    shift:
+                        - 1.175cx
+                        - '-0.025cy'
+                params:
                     net: BAT_P
