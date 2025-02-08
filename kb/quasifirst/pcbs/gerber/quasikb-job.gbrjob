@@ -5,17 +5,17 @@
       "Application": "Pcbnew",
       "Version": "8.0.8"
     },
-    "CreationDate": "2025-02-07T20:27:56+10:30"
+    "CreationDate": "2025-02-08T17:55:20+10:30"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "quasikeyboard",
-      "GUID": "71756173-696b-4657-9962-6f6172642e6b",
+      "Name": "quasikb",
+      "GUID": "71756173-696b-4622-9e6b-696361645f70",
       "Revision": "0.1"
     },
     "Size": {
-      "X": 122.7163,
-      "Y": 96.4968
+      "X": 122.6974,
+      "Y": 96.4339
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -32,47 +32,47 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "quasikeyboard-F_Cu.gbr",
+      "Path": "quasikb-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "quasikeyboard-B_Cu.gbr",
+      "Path": "quasikb-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "quasikeyboard-F_Paste.gbr",
+      "Path": "quasikb-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "quasikeyboard-B_Paste.gbr",
+      "Path": "quasikb-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "quasikeyboard-F_Silkscreen.gbr",
+      "Path": "quasikb-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "quasikeyboard-B_Silkscreen.gbr",
+      "Path": "quasikb-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "quasikeyboard-F_Mask.gbr",
+      "Path": "quasikb-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "quasikeyboard-B_Mask.gbr",
+      "Path": "quasikb-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "quasikeyboard-Edge_Cuts.gbr",
+      "Path": "quasikb-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
