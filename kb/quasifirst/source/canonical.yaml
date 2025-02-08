@@ -264,7 +264,12 @@ pcbs:
                     solder: false
                     hotswap: true
                     reversible: true
+                    hotswap_pads_same_side: true
+                    include_traces_vias: true
+                    include_plated_holes: false
                     choc_v1_support: true
+                    choc_v2_support: false
+                    allow_soldermask_bridges: true
             mcu:
                 what: mcu_nice_nano
                 where:
@@ -272,12 +277,13 @@ pcbs:
                         ref: matrix_inner_home
                         shift:
                             - 1.1715cx
-                            - 0.38cy
+                            - 0.35cy
                 params:
                     reversible: true
+                    include_traces: true
                     show_silk_labels: true
                     show_via_labels: true
-                    show_instructions: true
+                    show_instructions: false
                     use_rectangular_jumpers: false
                     include_extra_pins: true
                     only_required_jumpers: true
@@ -328,6 +334,7 @@ pcbs:
                     rotate: 90
                 params:
                     reversible: true
+                    include_silkscreen: true
                     from: GND
                     to: RST
             power:
@@ -336,9 +343,11 @@ pcbs:
                     ref: matrix_inner_top
                     shift:
                         - 1.17cx
-                        - 0.3cy
+                        - 0.285cy
                     rotate: 90
                 params:
+                    include_silkscreen: true
+                    include_courtyard: true
                     reversible: true
                     from: BAT_P
                     to: RAW
@@ -377,3 +386,13 @@ pcbs:
                         - '-0.025cy'
                 params:
                     net: BAT_P
+            jlcpcb_order_number_text:
+                what: utility_text
+                where: matrix_ring_bottom
+                params:
+                    text: JLCJLCJLCJLCJLC
+                    reversible: true
+                adjust:
+                    shift:
+                        - 0
+                        - '-0.15cy'

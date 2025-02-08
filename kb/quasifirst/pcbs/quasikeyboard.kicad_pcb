@@ -11,7 +11,7 @@
   (paper "A3")
   (title_block
     (title "quasikeyboard")
-    (date "2025-02-07")
+    (date "2025-02-08")
     (rev "0.1")
     (company "quasimontecarlo")
   )
@@ -149,17 +149,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 4.5) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 4.5) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 4.5) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 4.5) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 4.5) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 4.5) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -233,12 +229,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 1 "matrix_pinky_bottom")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 4.5) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 4.5) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 1 "matrix_pinky_bottom"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 199.5) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -246,24 +242,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 172.7980726 158.8113883)
-		(end 170.8922718 161.0427944)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 1)
-	)
-	(segment
-		(start 170.8922718 161.0427944)
-		(end 169.695971 161.1369453)
+		(end 177.2842007 158.4583224)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 1)
 	)
 	(via
-		(at 169.695971 161.1369453)
+		(at 177.2842007 158.4583224)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -271,88 +259,32 @@
 		(net 1)
 	)
 	(segment
-		(start 168.4996702 161.2310962)
-		(end 169.695971 161.1369453)
+		(start 177.4568107 160.6515405)
+		(end 177.2842007 158.4583224)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 1)
+	)
+	(segment
+		(start 161.9547461 161.8715795)
+		(end 161.7821361 159.6783613)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 161.7821361 159.6783613)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 166.2682641 159.3252954)
-		(end 168.4996702 161.2310962)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 1)
-	)
-	(segment
-		(start 163.4500354 163.6136306)
-		(end 167.7038816 163.2788456)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 168.7867439 162.0109768)
-		(end 169.7587383 161.9344792)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 161.4562875 161.910809)
-		(end 163.4500354 163.6136306)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 167.7038816 163.2788456)
-		(end 168.7867439 162.0109768)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 169.7587383 161.9344792)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 171.9848101 162.9419292)
-		(end 170.7169413 161.859067)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 176.2524478 162.6060589)
-		(end 171.9848101 162.9419292)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 170.7169413 161.859067)
-		(end 169.7587383 161.9344792)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 177.9552693 160.612311)
-		(end 176.2524478 162.6060589)
+		(end 161.7821361 159.6783613)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -373,17 +305,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 4.5) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 4.5) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 4.5) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 4.5) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 4.5) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 4.5) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -457,12 +385,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 5 "matrix_pinky_home")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 4.5) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 4.5) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 5 "matrix_pinky_home"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 199.5) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -470,24 +398,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 171.3858089 140.8668763)
-		(end 169.4800081 143.0982824)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 5)
-	)
-	(segment
-		(start 169.4800081 143.0982824)
-		(end 168.28370729999997 143.1924333)
+		(end 175.871937 140.5138104)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 5)
 	)
 	(via
-		(at 168.28370729999997 143.1924333)
+		(at 175.871937 140.5138104)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -495,88 +415,32 @@
 		(net 5)
 	)
 	(segment
-		(start 167.0874065 143.2865842)
-		(end 168.28370729999997 143.1924333)
+		(start 176.044547 142.7070285)
+		(end 175.871937 140.5138104)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 5)
+	)
+	(segment
+		(start 160.54248239999998 143.9270675)
+		(end 160.3698724 141.7338493)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 160.3698724 141.7338493)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 164.8560004 141.38078339999998)
-		(end 167.0874065 143.2865842)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 5)
-	)
-	(segment
-		(start 162.03777169999998 145.6691186)
-		(end 166.29161789999998 145.3343336)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 167.3744802 144.0664648)
-		(end 168.3464746 143.9899672)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 160.0440238 143.966297)
-		(end 162.03777169999998 145.6691186)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 166.29161789999998 145.3343336)
-		(end 167.3744802 144.0664648)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 168.3464746 143.9899672)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 170.5725464 144.9974172)
-		(end 169.3046776 143.914555)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 174.8401841 144.6615469)
-		(end 170.5725464 144.9974172)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 169.3046776 143.914555)
-		(end 168.3464746 143.9899672)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 176.5430056 142.667799)
-		(end 174.8401841 144.6615469)
+		(end 160.3698724 141.7338493)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -597,17 +461,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 4.5) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 4.5) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 4.5) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 4.5) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 4.5) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 4.5) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -681,12 +541,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 6 "matrix_pinky_top")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 4.5) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 4.5) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 6 "matrix_pinky_top"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 199.5) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -694,24 +554,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 169.9735452 122.9223643)
-		(end 168.06774439999998 125.1537704)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 6)
-	)
-	(segment
-		(start 168.06774439999998 125.1537704)
-		(end 166.87144359999996 125.24792129999999)
+		(end 174.4596733 122.5692984)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 6)
 	)
 	(via
-		(at 166.87144359999996 125.24792129999999)
+		(at 174.4596733 122.5692984)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -719,88 +571,32 @@
 		(net 6)
 	)
 	(segment
-		(start 165.67514279999997 125.34207219999999)
-		(end 166.87144359999996 125.24792129999999)
+		(start 174.63228329999998 124.76251649999999)
+		(end 174.4596733 122.5692984)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 6)
+	)
+	(segment
+		(start 159.13021869999997 125.98255549999999)
+		(end 158.95760869999998 123.7893373)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 158.95760869999998 123.7893373)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 163.4437367 123.4362714)
-		(end 165.67514279999997 125.34207219999999)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 6)
-	)
-	(segment
-		(start 160.62550799999997 127.72460659999999)
-		(end 164.87935419999997 127.38982159999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 165.96221649999998 126.12195279999999)
-		(end 166.93421089999998 126.04545519999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 158.63176009999998 126.021785)
-		(end 160.62550799999997 127.72460659999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 164.87935419999997 127.38982159999999)
-		(end 165.96221649999998 126.12195279999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 166.93421089999998 126.04545519999999)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 169.16028269999998 127.0529052)
-		(end 167.89241389999998 125.97004299999999)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 173.42792039999998 126.71703489999999)
-		(end 169.16028269999998 127.0529052)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 167.89241389999998 125.97004299999999)
-		(end 166.93421089999998 126.04545519999999)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 175.13074189999998 124.723287)
-		(end 173.42792039999998 126.71703489999999)
+		(end 158.95760869999998 123.7893373)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -821,17 +617,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 1.8000000000000003) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 1.8000000000000003) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 1.8000000000000003) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 1.8000000000000003) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 1.8000000000000003) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 1.8000000000000003) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -905,12 +697,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 7 "matrix_ring_bottom")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 1.8000000000000003) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 1.8000000000000003) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 7 "matrix_ring_bottom"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 196.8) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -918,24 +710,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 191.625029 142.1437404)
-		(end 189.61623020000002 144.2828939)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 7)
-	)
-	(segment
-		(start 189.61623020000002 144.2828939)
-		(end 188.4168223 144.3205868)
+		(end 196.12280850000002 142.00239200000001)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 7)
 	)
 	(via
-		(at 188.4168223 144.3205868)
+		(at 196.12280850000002 142.00239200000001)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -943,88 +727,32 @@
 		(net 7)
 	)
 	(segment
-		(start 187.21741440000002 144.3582797)
-		(end 188.4168223 144.3205868)
+		(start 196.19191220000002 144.2013064)
+		(end 196.12280850000002 142.00239200000001)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 7)
+	)
+	(segment
+		(start 180.64958510000002 144.6897438)
+		(end 180.58048150000002 142.4908293)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 180.58048150000002 142.4908293)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 185.07826100000003 142.3494809)
-		(end 187.21741440000002 144.3582797)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 7)
-	)
-	(segment
-		(start 182.0611526 146.5002987)
-		(end 186.3260471 146.366269)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 187.467432 145.15081750000002)
-		(end 188.44195090000002 145.120192)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 180.1498319 144.7054491)
-		(end 182.0611526 146.5002987)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 186.3260471 146.366269)
-		(end 187.467432 145.15081750000002)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 188.44195090000002 145.120192)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 190.6180942 146.23138600000001)
-		(end 189.4026426 145.0900011)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 194.8968158 146.0969218)
-		(end 190.6180942 146.23138600000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 189.4026426 145.0900011)
-		(end 188.44195090000002 145.120192)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 196.6916654 144.1856011)
-		(end 194.8968158 146.0969218)
+		(end 180.58048150000002 142.4908293)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -1045,17 +773,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 1.8000000000000003) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 1.8000000000000003) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 1.8000000000000003) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 1.8000000000000003) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 1.8000000000000003) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 1.8000000000000003) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1129,12 +853,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 8 "matrix_ring_home")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 1.8000000000000003) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 1.8000000000000003) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 8 "matrix_ring_home"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 196.8) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -1142,24 +866,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 191.05963530000002 124.1526223)
-		(end 189.05083650000003 126.29177580000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 8)
-	)
-	(segment
-		(start 189.05083650000003 126.29177580000001)
-		(end 187.85142860000002 126.3294687)
+		(end 195.55741480000003 124.0112739)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 8)
 	)
 	(via
-		(at 187.85142860000002 126.3294687)
+		(at 195.55741480000003 124.0112739)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -1167,88 +883,32 @@
 		(net 8)
 	)
 	(segment
-		(start 186.65202070000004 126.3671616)
-		(end 187.85142860000002 126.3294687)
+		(start 195.62651850000003 126.21018830000001)
+		(end 195.55741480000003 124.0112739)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 8)
+	)
+	(segment
+		(start 180.08419140000004 126.69862570000001)
+		(end 180.01508780000003 124.49971120000001)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 180.01508780000003 124.49971120000001)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 184.51286730000004 124.35836280000001)
-		(end 186.65202070000004 126.3671616)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 8)
-	)
-	(segment
-		(start 181.49575890000003 128.5091806)
-		(end 185.76065340000002 128.3751509)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 186.90203830000002 127.15969940000001)
-		(end 187.87655720000004 127.12907390000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 179.58443820000002 126.71433100000002)
-		(end 181.49575890000003 128.5091806)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 185.76065340000002 128.3751509)
-		(end 186.90203830000002 127.15969940000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 187.87655720000004 127.12907390000001)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 190.05270050000001 128.24026790000002)
-		(end 188.83724890000002 127.09888300000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 194.33142210000003 128.1058037)
-		(end 190.05270050000001 128.24026790000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 188.83724890000002 127.09888300000001)
-		(end 187.87655720000004 127.12907390000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 196.12627170000002 126.194483)
-		(end 194.33142210000003 128.1058037)
+		(end 180.01508780000003 124.49971120000001)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -1269,17 +929,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 1.8000000000000003) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 1.8000000000000003) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 1.8000000000000003) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 1.8000000000000003) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 1.8000000000000003) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 1.8000000000000003) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1353,12 +1009,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 9 "matrix_ring_top")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 1.8000000000000003) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 1.8000000000000003) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 9 "matrix_ring_top"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 196.8) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -1366,24 +1022,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 190.49424160000004 106.16150420000001)
-		(end 188.48544280000004 108.30065770000002)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 9)
-	)
-	(segment
-		(start 188.48544280000004 108.30065770000002)
-		(end 187.28603490000003 108.33835060000001)
+		(end 194.99202110000004 106.02015580000001)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 9)
 	)
 	(via
-		(at 187.28603490000003 108.33835060000001)
+		(at 194.99202110000004 106.02015580000001)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -1391,88 +1039,32 @@
 		(net 9)
 	)
 	(segment
-		(start 186.08662700000005 108.37604350000001)
-		(end 187.28603490000003 108.33835060000001)
+		(start 195.06112480000004 108.21907020000002)
+		(end 194.99202110000004 106.02015580000001)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 9)
+	)
+	(segment
+		(start 179.51879770000005 108.70750760000001)
+		(end 179.44969410000004 106.50859310000001)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 179.44969410000004 106.50859310000001)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 183.94747360000005 106.36724470000001)
-		(end 186.08662700000005 108.37604350000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 9)
-	)
-	(segment
-		(start 180.93036520000004 110.51806250000001)
-		(end 185.19525970000004 110.38403280000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 186.33664460000003 109.16858130000001)
-		(end 187.31116350000005 109.13795580000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 179.01904450000004 108.72321290000002)
-		(end 180.93036520000004 110.51806250000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 185.19525970000004 110.38403280000001)
-		(end 186.33664460000003 109.16858130000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 187.31116350000005 109.13795580000001)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 189.48730680000003 110.24914980000001)
-		(end 188.27185520000003 109.10776490000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 193.76602840000004 110.11468560000002)
-		(end 189.48730680000003 110.24914980000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 188.27185520000003 109.10776490000002)
-		(end 187.31116350000005 109.13795580000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 195.56087800000003 108.20336490000001)
-		(end 193.76602840000004 110.11468560000002)
+		(end 179.44969410000004 106.50859310000001)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -1493,17 +1085,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1577,12 +1165,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 10 "matrix_middle_bottom")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 10 "matrix_middle_bottom"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 194.1) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -1590,24 +1178,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 211.2856082 137.1846186)
-		(end 209.17827150000002 139.2267699)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 209.17827150000002 139.2267699)
-		(end 207.97841960000002 139.2079211)
+		(end 215.78505310000003 137.2553015)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 10)
 	)
 	(via
-		(at 207.97841960000002 139.2079211)
+		(at 215.78505310000003 137.2553015)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -1615,88 +1195,32 @@
 		(net 10)
 	)
 	(segment
-		(start 206.7785676 139.18907240000001)
-		(end 207.97841960000002 139.2079211)
+		(start 215.75049700000002 139.45503010000002)
+		(end 215.78505310000003 137.2553015)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 10)
+	)
+	(segment
+		(start 200.2024153 139.2107813)
+		(end 200.23697140000002 137.0110527)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 200.23697140000002 137.0110527)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 204.7364163 137.0817357)
-		(end 206.7785676 139.18907240000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 201.5271269 141.0858203)
-		(end 205.79360050000003 141.1528434)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 206.99097400000002 139.9925078)
-		(end 207.96585370000003 140.0078225)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 199.70247700000002 139.2029277)
-		(end 201.5271269 141.0858203)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 205.79360050000003 141.1528434)
-		(end 206.99097400000002 139.9925078)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 207.96585370000003 140.0078225)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 210.0872367 141.2202933)
-		(end 208.9269011 140.0229198)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 214.3675426 141.2875337)
-		(end 210.0872367 141.2202933)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 208.9269011 140.0229198)
-		(end 207.96585370000003 140.0078225)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 216.25043530000002 139.46288380000001)
-		(end 214.3675426 141.2875337)
+		(end 200.23697140000002 137.0110527)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -1717,17 +1241,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1801,12 +1321,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 11 "matrix_middle_home")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 11 "matrix_middle_home"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 194.1) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -1814,24 +1334,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 211.5683399 119.18683920000001)
-		(end 209.46100320000002 121.22899050000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 11)
-	)
-	(segment
-		(start 209.46100320000002 121.22899050000001)
-		(end 208.26115130000002 121.21014170000001)
+		(end 216.06778480000003 119.2575221)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 11)
 	)
 	(via
-		(at 208.26115130000002 121.21014170000001)
+		(at 216.06778480000003 119.2575221)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -1839,88 +1351,32 @@
 		(net 11)
 	)
 	(segment
-		(start 207.0612993 121.191293)
-		(end 208.26115130000002 121.21014170000001)
+		(start 216.03322870000002 121.4572507)
+		(end 216.06778480000003 119.2575221)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 11)
+	)
+	(segment
+		(start 200.485147 121.21300190000001)
+		(end 200.51970310000002 119.01327330000001)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 200.51970310000002 119.01327330000001)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 205.019148 119.08395630000001)
-		(end 207.0612993 121.191293)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 11)
-	)
-	(segment
-		(start 201.8098586 123.08804090000001)
-		(end 206.07633220000002 123.15506400000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 207.27370570000002 121.99472840000001)
-		(end 208.24858540000002 122.0100431)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 199.98520870000002 121.2051483)
-		(end 201.8098586 123.08804090000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 206.07633220000002 123.15506400000001)
-		(end 207.27370570000002 121.99472840000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 208.24858540000002 122.0100431)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 210.3699684 123.22251390000001)
-		(end 209.2096328 122.02514040000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 214.6502743 123.28975430000001)
-		(end 210.3699684 123.22251390000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 209.2096328 122.02514040000001)
-		(end 208.24858540000002 122.0100431)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 216.53316700000002 121.4651044)
-		(end 214.6502743 123.28975430000001)
+		(end 200.51970310000002 119.01327330000001)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -1941,17 +1397,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -2025,12 +1477,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 12 "matrix_middle_top")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 12 "matrix_middle_top"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 194.1) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -2038,24 +1490,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 211.8510716 101.18905980000001)
-		(end 209.74373490000002 103.23121110000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 12)
-	)
-	(segment
-		(start 209.74373490000002 103.23121110000001)
-		(end 208.54388300000002 103.21236230000001)
+		(end 216.35051650000003 101.2597427)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 12)
 	)
 	(via
-		(at 208.54388300000002 103.21236230000001)
+		(at 216.35051650000003 101.2597427)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -2063,88 +1507,32 @@
 		(net 12)
 	)
 	(segment
-		(start 207.344031 103.1935136)
-		(end 208.54388300000002 103.21236230000001)
+		(start 216.31596040000002 103.4594713)
+		(end 216.35051650000003 101.2597427)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 12)
+	)
+	(segment
+		(start 200.7678787 103.21522250000001)
+		(end 200.80243480000001 101.01549390000001)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 200.80243480000001 101.01549390000001)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 205.3018797 101.08617690000001)
-		(end 207.344031 103.1935136)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 12)
-	)
-	(segment
-		(start 202.0925903 105.09026150000001)
-		(end 206.35906390000002 105.15728460000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 207.55643740000002 103.99694900000001)
-		(end 208.53131710000002 104.0122637)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 200.26794040000001 103.2073689)
-		(end 202.0925903 105.09026150000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 206.35906390000002 105.15728460000001)
-		(end 207.55643740000002 103.99694900000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 208.53131710000002 104.0122637)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 210.6527001 105.22473450000001)
-		(end 209.4923645 104.02736100000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 214.933006 105.29197490000001)
-		(end 210.6527001 105.22473450000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 209.4923645 104.02736100000001)
-		(end 208.53131710000002 104.0122637)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 216.81589870000002 103.467325)
-		(end 214.933006 105.29197490000001)
+		(end 200.80243480000001 101.01549390000001)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -2165,17 +1553,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -2249,12 +1633,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 13 "matrix_index_bottom")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 13 "matrix_index_bottom"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 194.1) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -2262,24 +1646,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 230.2125813 141.9825024)
-		(end 228.10524460000002 144.0246537)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 13)
-	)
-	(segment
-		(start 228.10524460000002 144.0246537)
-		(end 226.90539270000002 144.0058049)
+		(end 234.71202620000003 142.0531853)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 13)
 	)
 	(via
-		(at 226.90539270000002 144.0058049)
+		(at 234.71202620000003 142.0531853)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -2287,88 +1663,32 @@
 		(net 13)
 	)
 	(segment
-		(start 225.7055407 143.9869562)
-		(end 226.90539270000002 144.0058049)
+		(start 234.67747010000002 144.2529139)
+		(end 234.71202620000003 142.0531853)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 13)
+	)
+	(segment
+		(start 219.1293884 144.0086651)
+		(end 219.1639445 141.8089365)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 219.1639445 141.8089365)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 223.6633894 141.8796195)
-		(end 225.7055407 143.9869562)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 13)
-	)
-	(segment
-		(start 220.4541 145.8837041)
-		(end 224.72057360000002 145.9507272)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 225.91794710000002 144.7903916)
-		(end 226.89282680000002 144.8057063)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 218.6294501 144.0008115)
-		(end 220.4541 145.8837041)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 224.72057360000002 145.9507272)
-		(end 225.91794710000002 144.7903916)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 226.89282680000002 144.8057063)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 229.0142098 146.0181771)
-		(end 227.8538742 144.8208036)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 233.2945157 146.0854175)
-		(end 229.0142098 146.0181771)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 227.8538742 144.8208036)
-		(end 226.89282680000002 144.8057063)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 235.17740840000002 144.2607676)
-		(end 233.2945157 146.0854175)
+		(end 219.1639445 141.8089365)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -2389,17 +1709,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -2473,12 +1789,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 14 "matrix_index_home")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 14 "matrix_index_home"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 194.1) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -2486,24 +1802,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 230.495313 123.98472299999999)
-		(end 228.38797630000002 126.02687429999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 14)
-	)
-	(segment
-		(start 228.38797630000002 126.02687429999999)
-		(end 227.18812440000002 126.00802549999999)
+		(end 234.99475790000002 124.05540589999998)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 14)
 	)
 	(via
-		(at 227.18812440000002 126.00802549999999)
+		(at 234.99475790000002 124.05540589999998)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -2511,88 +1819,32 @@
 		(net 14)
 	)
 	(segment
-		(start 225.9882724 125.98917679999998)
-		(end 227.18812440000002 126.00802549999999)
+		(start 234.96020180000002 126.25513449999998)
+		(end 234.99475790000002 124.05540589999998)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 14)
+	)
+	(segment
+		(start 219.4121201 126.01088569999999)
+		(end 219.4466762 123.81115709999999)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 219.4466762 123.81115709999999)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 223.9461211 123.88184009999999)
-		(end 225.9882724 125.98917679999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 14)
-	)
-	(segment
-		(start 220.7368317 127.88592469999999)
-		(end 225.00330530000002 127.95294779999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 226.20067880000002 126.7926122)
-		(end 227.17555850000002 126.80792689999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 218.9121818 126.00303209999998)
-		(end 220.7368317 127.88592469999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 225.00330530000002 127.95294779999999)
-		(end 226.20067880000002 126.7926122)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 227.17555850000002 126.80792689999998)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 229.2969415 128.0203977)
-		(end 228.1366059 126.82302419999999)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 233.5772474 128.0876381)
-		(end 229.2969415 128.0203977)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 228.1366059 126.82302419999999)
-		(end 227.17555850000002 126.80792689999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 235.46014010000002 126.26298819999998)
-		(end 233.5772474 128.0876381)
+		(end 219.4466762 123.81115709999999)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -2613,17 +1865,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -2697,12 +1945,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 15 "matrix_index_top")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 15 "matrix_index_top"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 194.1) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -2710,24 +1958,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 230.7780447 105.98694359999999)
-		(end 228.67070800000002 108.02909489999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 228.67070800000002 108.02909489999999)
-		(end 227.47085610000002 108.01024609999999)
+		(end 235.27748960000002 106.05762649999998)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 15)
 	)
 	(via
-		(at 227.47085610000002 108.01024609999999)
+		(at 235.27748960000002 106.05762649999998)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -2735,88 +1975,32 @@
 		(net 15)
 	)
 	(segment
-		(start 226.2710041 107.99139739999998)
-		(end 227.47085610000002 108.01024609999999)
+		(start 235.24293350000002 108.25735509999998)
+		(end 235.27748960000002 106.05762649999998)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 15)
+	)
+	(segment
+		(start 219.6948518 108.01310629999999)
+		(end 219.7294079 105.81337769999999)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 219.7294079 105.81337769999999)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 224.2288528 105.88406069999999)
-		(end 226.2710041 107.99139739999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 221.0195634 109.88814529999999)
-		(end 225.28603700000002 109.95516839999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 226.48341050000002 108.7948328)
-		(end 227.45829020000002 108.81014749999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 219.1949135 108.00525269999999)
-		(end 221.0195634 109.88814529999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 225.28603700000002 109.95516839999999)
-		(end 226.48341050000002 108.7948328)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 227.45829020000002 108.81014749999999)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 229.5796732 110.02261829999999)
-		(end 228.4193376 108.8252448)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 233.8599791 110.0898587)
-		(end 229.5796732 110.02261829999999)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 228.4193376 108.8252448)
-		(end 227.45829020000002 108.81014749999999)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 235.74287180000002 108.26520879999998)
-		(end 233.8599791 110.0898587)
+		(end 219.7294079 105.81337769999999)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -2837,17 +2021,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -2921,12 +2101,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 16 "matrix_inner_bottom")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 16 "matrix_inner_bottom"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 194.1) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -2934,24 +2114,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 249.153691 145.8804973)
-		(end 247.04635430000002 147.9226486)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 16)
-	)
-	(segment
-		(start 247.04635430000002 147.9226486)
-		(end 245.84650240000002 147.9037998)
+		(end 253.6531359 145.9511802)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 16)
 	)
 	(via
-		(at 245.84650240000002 147.9037998)
+		(at 253.6531359 145.9511802)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -2959,88 +2131,32 @@
 		(net 16)
 	)
 	(segment
-		(start 244.6466504 147.88495110000002)
-		(end 245.84650240000002 147.9037998)
+		(start 253.61857980000002 148.15090880000002)
+		(end 253.6531359 145.9511802)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 16)
+	)
+	(segment
+		(start 238.0704981 147.90666000000002)
+		(end 238.1050542 145.7069314)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 238.1050542 145.7069314)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 242.6044991 145.7776144)
-		(end 244.6466504 147.88495110000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 16)
-	)
-	(segment
-		(start 239.3952097 149.781699)
-		(end 243.66168330000002 149.8487221)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 244.85905680000002 148.6883865)
-		(end 245.83393650000002 148.7037012)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 237.5705598 147.8988064)
-		(end 239.3952097 149.781699)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 243.66168330000002 149.8487221)
-		(end 244.85905680000002 148.6883865)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 245.83393650000002 148.7037012)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 247.9553195 149.91617200000002)
-		(end 246.7949839 148.71879850000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 252.2356254 149.98341240000002)
-		(end 247.9553195 149.91617200000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 246.7949839 148.71879850000002)
-		(end 245.83393650000002 148.7037012)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 254.11851810000002 148.15876250000002)
-		(end 252.2356254 149.98341240000002)
+		(end 238.1050542 145.7069314)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -3061,17 +2177,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -3145,12 +2257,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 17 "matrix_inner_home")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 17 "matrix_inner_home"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 194.1) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -3158,24 +2270,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 249.4364227 127.8827179)
-		(end 247.32908600000002 129.9248692)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 17)
-	)
-	(segment
-		(start 247.32908600000002 129.9248692)
-		(end 246.12923410000002 129.9060204)
+		(end 253.9358676 127.9534008)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 17)
 	)
 	(via
-		(at 246.12923410000002 129.9060204)
+		(at 253.9358676 127.9534008)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -3183,88 +2287,32 @@
 		(net 17)
 	)
 	(segment
-		(start 244.9293821 129.8871717)
-		(end 246.12923410000002 129.9060204)
+		(start 253.90131150000002 130.1531294)
+		(end 253.9358676 127.9534008)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 17)
+	)
+	(segment
+		(start 238.3532298 129.9088806)
+		(end 238.3877859 127.709152)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 238.3877859 127.709152)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 242.8872308 127.779835)
-		(end 244.9293821 129.8871717)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 17)
-	)
-	(segment
-		(start 239.6779414 131.7839196)
-		(end 243.94441500000002 131.8509427)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 245.14178850000002 130.6906071)
-		(end 246.11666820000002 130.7059218)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 237.8532915 129.901027)
-		(end 239.6779414 131.7839196)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 243.94441500000002 131.8509427)
-		(end 245.14178850000002 130.6906071)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 246.11666820000002 130.7059218)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 248.2380512 131.9183926)
-		(end 247.0777156 130.7210191)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 252.5183571 131.985633)
-		(end 248.2380512 131.9183926)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 247.0777156 130.7210191)
-		(end 246.11666820000002 130.7059218)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 254.40124980000002 130.1609831)
-		(end 252.5183571 131.985633)
+		(end 238.3877859 127.709152)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -3285,17 +2333,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -3369,12 +2413,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 18 "matrix_inner_top")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 18 "matrix_inner_top"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 194.1) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -3382,24 +2426,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 249.7191544 109.8849385)
-		(end 247.61181770000002 111.9270898)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 18)
-	)
-	(segment
-		(start 247.61181770000002 111.9270898)
-		(end 246.41196580000002 111.908241)
+		(end 254.2185993 109.9556214)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 18)
 	)
 	(via
-		(at 246.41196580000002 111.908241)
+		(at 254.2185993 109.9556214)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -3407,88 +2443,32 @@
 		(net 18)
 	)
 	(segment
-		(start 245.2121138 111.8893923)
-		(end 246.41196580000002 111.908241)
+		(start 254.18404320000002 112.15535)
+		(end 254.2185993 109.9556214)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 18)
+	)
+	(segment
+		(start 238.6359615 111.9111012)
+		(end 238.6705176 109.7113726)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 238.6705176 109.7113726)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 243.1699625 109.7820556)
-		(end 245.2121138 111.8893923)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 18)
-	)
-	(segment
-		(start 239.9606731 113.7861402)
-		(end 244.22714670000002 113.8531633)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 245.42452020000002 112.69282770000001)
-		(end 246.39939990000002 112.7081424)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 238.1360232 111.9032476)
-		(end 239.9606731 113.7861402)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 244.22714670000002 113.8531633)
-		(end 245.42452020000002 112.69282770000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 246.39939990000002 112.7081424)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 248.5207829 113.9206132)
-		(end 247.3604473 112.72323970000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 252.8010888 113.98785360000001)
-		(end 248.5207829 113.9206132)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 247.3604473 112.72323970000001)
-		(end 246.39939990000002 112.7081424)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 254.68398150000002 112.1632037)
-		(end 252.8010888 113.98785360000001)
+		(end 238.6705176 109.7113726)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -3509,17 +2489,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -3593,12 +2569,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 19 "thumb_innit")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 19 "thumb_innit"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 194.1) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -3606,24 +2582,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 229.80262030000003 168.07928249999998)
-		(end 227.69528360000004 170.12143379999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 19)
-	)
-	(segment
-		(start 227.69528360000004 170.12143379999998)
-		(end 226.49543170000004 170.10258499999998)
+		(end 234.30206520000002 168.14996539999999)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 19)
 	)
 	(via
-		(at 226.49543170000004 170.10258499999998)
+		(at 234.30206520000002 168.14996539999999)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -3631,88 +2599,32 @@
 		(net 19)
 	)
 	(segment
-		(start 225.29557970000002 170.0837363)
-		(end 226.49543170000004 170.10258499999998)
+		(start 234.26750910000004 170.349694)
+		(end 234.30206520000002 168.14996539999999)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 19)
+	)
+	(segment
+		(start 218.71942740000003 170.1054452)
+		(end 218.75398350000003 167.90571659999998)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 218.75398350000003 167.90571659999998)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 223.25342840000002 167.97639959999998)
-		(end 225.29557970000002 170.0837363)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 19)
-	)
-	(segment
-		(start 220.04413900000003 171.98048419999998)
-		(end 224.31061260000004 172.04750729999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 225.50798610000004 170.88717169999998)
-		(end 226.48286580000004 170.9024864)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 218.21948910000003 170.0975916)
-		(end 220.04413900000003 171.98048419999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 224.31061260000004 172.04750729999998)
-		(end 225.50798610000004 170.88717169999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 226.48286580000004 170.9024864)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 228.60424880000002 172.1149572)
-		(end 227.44391320000003 170.9175837)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 232.88455470000002 172.1821976)
-		(end 228.60424880000002 172.1149572)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 227.44391320000003 170.9175837)
-		(end 226.48286580000004 170.9024864)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 234.76744740000004 170.3575477)
-		(end 232.88455470000002 172.1821976)
+		(end 218.75398350000003 167.90571659999998)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -3733,17 +2645,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -0.8999999999999995) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 -0.8999999999999995) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 -0.8999999999999995) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -3817,12 +2725,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 20 "thumb_middle")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 -0.8999999999999995) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 20 "thumb_middle"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 194.1) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -3830,24 +2738,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 248.77200320000003 170.17749949999998)
-		(end 246.66466650000004 172.21965079999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 246.66466650000004 172.21965079999998)
-		(end 245.46481460000004 172.20080199999998)
+		(end 253.27144810000004 170.2481824)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 20)
 	)
 	(via
-		(at 245.46481460000004 172.20080199999998)
+		(at 253.27144810000004 170.2481824)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -3855,88 +2755,32 @@
 		(net 20)
 	)
 	(segment
-		(start 244.26496260000002 172.1819533)
-		(end 245.46481460000004 172.20080199999998)
+		(start 253.23689200000004 172.447911)
+		(end 253.27144810000004 170.2481824)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 20)
+	)
+	(segment
+		(start 237.68881030000003 172.2036622)
+		(end 237.72336640000003 170.00393359999998)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 237.72336640000003 170.00393359999998)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 242.22281130000002 170.07461659999998)
-		(end 244.26496260000002 172.1819533)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 239.01352190000003 174.07870119999998)
-		(end 243.27999550000004 174.14572429999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 244.47736900000004 172.9853887)
-		(end 245.45224870000004 173.0007034)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 237.18887200000003 172.1958086)
-		(end 239.01352190000003 174.07870119999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 243.27999550000004 174.14572429999998)
-		(end 244.47736900000004 172.9853887)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 245.45224870000004 173.0007034)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 247.57363170000002 174.2131742)
-		(end 246.41329610000003 173.0158007)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 251.85393760000002 174.2804146)
-		(end 247.57363170000002 174.2131742)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 246.41329610000003 173.0158007)
-		(end 245.45224870000004 173.0007034)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 253.73683030000004 172.4557647)
-		(end 251.85393760000002 174.2804146)
+		(end 237.72336640000003 170.00393359999998)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -3957,17 +2801,13 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 74.1) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 74.1) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
     (pad "" np_thru_hole circle (at 5.5 0 74.1) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at -5.5 0 74.1) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
-    
-    (pad "" thru_hole circle (at 5.00 5.15 74.1) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
-    
-    (pad "" thru_hole circle (at -5.00 5.15 74.1) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -4041,12 +2881,12 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 21 "thumb_reachy")
+      (net 2 "GND")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 74.1) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "GND"))
+    (pad "2" smd rect (at 8.275 -3.75 74.1) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 21 "thumb_reachy"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 269.1) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -4054,24 +2894,16 @@
     
   )
     
-	(segment
+  (segment
 		(start 262.0284004 173.13148059999997)
-		(end 263.45554830000003 175.6955592)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 21)
-	)
-	(segment
-		(start 263.45554830000003 175.6955592)
-		(end 263.1267972 176.8496487)
+		(end 263.2612169 168.80364469999998)
 		(width 0.2)
     (locked no)
 		(layer "F.Cu")
 		(net 21)
 	)
 	(via
-		(at 263.1267972 176.8496487)
+		(at 263.2612169 168.80364469999998)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -4079,88 +2911,32 @@
 		(net 21)
 	)
 	(segment
-		(start 262.7980462 178.00373829999998)
-		(end 263.1267972 176.8496487)
+		(start 265.3770478 169.40635489999997)
+		(end 263.2612169 168.80364469999998)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
 		(net 21)
+	)
+	(segment
+		(start 261.116982 184.3614323)
+		(end 259.0011511 183.75872199999998)
+		(width 0.2)
+    (locked no)
+		(layer "F.Cu")
+		(net 2)
+	)
+	(via
+		(at 259.0011511 183.75872199999998)
+		(size 0.6)
+    (drill 0.3)
+		(layers "F.Cu" "B.Cu")
+    (locked no)
+		(net 2)
 	)
 	(segment
 		(start 260.2339676 179.43088609999998)
-		(end 262.7980462 178.00373829999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 21)
-	)
-	(segment
-		(start 263.2709911 183.56715499999999)
-		(end 264.4399751 179.46340479999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 263.62908 178.0065139)
-		(end 263.8961903 177.0688161)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 260.9800024 184.842303)
-		(end 263.2709911 183.56715499999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 264.4399751 179.46340479999998)
-		(end 263.62908 178.0065139)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 263.8961903 177.0688161)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 265.6164015 175.33352799999997)
-		(end 264.15951060000003 176.14442309999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 266.78917540000003 171.21647309999997)
-		(end 265.6164015 175.33352799999997)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 264.15951060000003 176.14442309999998)
-		(end 263.8961903 177.0688161)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 265.51402740000003 168.9254843)
-		(end 266.78917540000003 171.21647309999997)
+		(end 259.0011511 183.75872199999998)
 		(width 0.2)
     (locked no)
 		(layer "B.Cu")
@@ -4172,7 +2948,7 @@
     
   (footprint "ceoloide:mcu_nice_nano"
     (layer "F.Cu")
-    (at 267.254236 127.6525596 -0.8999999999999995)
+    (at 267.2462253 128.1624966 -0.8999999999999995)
     (property "Reference" "MCU1"
       (at 0 -15 -0.8999999999999995)
       (layer "F.SilkS")
@@ -4820,97 +3596,90 @@
     (pad "29" thru_hole circle (at -2.54 10.16 -0.8999999999999995) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 20 "thumb_middle"))
     
     
-    (fp_text user "R hand back side (M↑)" (at 0 -15.245 -0.8999999999999995) (layer "F.SilkS")
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text user "L hand back side (M↑)" (at 0 -15.245 -0.8999999999999995) (layer "B.SilkS")
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    
     
   )
 
   
   
-  (segment (start 272.2281298 115.02912880000001) (end 270.8532995 115.0075312) (width 0.25) (layer "F.Cu"))
-  (segment (start 262.679308 114.8791239) (end 264.0541384 114.9007215) (width 0.25) (layer "F.Cu"))
+  (segment (start 272.2201191 115.5390658) (end 270.8452888 115.5174682) (width 0.25) (layer "F.Cu"))
+  (segment (start 262.6712973 115.3890609) (end 264.0461277 115.4106585) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 259.834659 114.8344366) (end 261.95439749999997 114.8677361) (width 0.25) (layer "F.Cu"))
-  (segment (start 259.834659 114.8344366) (end 261.95439749999997 114.8677361) (width 0.25) (layer "B.Cu"))
-  (segment (start 272.95304039999996 115.0405166) (end 275.0727789 115.0738161) (width 0.25) (layer "F.Cu"))
-  (segment (start 275.0727789 115.0738161) (end 272.95304039999996 115.0405166) (width 0.25) (layer "B.Cu"))
+  (segment (start 259.8266483 115.3443736) (end 261.94638679999997 115.3776731) (width 0.25) (layer "F.Cu"))
+  (segment (start 259.8266483 115.3443736) (end 261.94638679999997 115.3776731) (width 0.25) (layer "B.Cu"))
+  (segment (start 272.94502969999996 115.5504536) (end 275.0647682 115.5837531) (width 0.25) (layer "F.Cu"))
+  (segment (start 275.0647682 115.5837531) (end 272.94502969999996 115.5504536) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 264.8457326 115.1431852) (end 270.6197152 115.2338902) (width 0.25) (layer "B.Cu"))
-  (segment (start 262.679308 114.8791239) (end 263.0289599 114.88461670000001) (width 0.25) (layer "B.Cu"))
-  (segment (start 263.7424826 115.6209151) (end 264.34301849999997 115.63034900000001) (width 0.25) (layer "B.Cu"))
-  (segment (start 263.0289599 114.88461670000001) (end 263.7424826 115.6209151) (width 0.25) (layer "B.Cu"))
-  (segment (start 264.34301849999997 115.63034900000001) (end 264.8457326 115.1431852) (width 0.25) (layer "B.Cu"))
+  (segment (start 264.8377219 115.6531222) (end 270.6117045 115.7438272) (width 0.25) (layer "B.Cu"))
+  (segment (start 262.6712973 115.3890609) (end 263.0209492 115.3945537) (width 0.25) (layer "B.Cu"))
+  (segment (start 263.7344719 116.1308521) (end 264.33500779999997 116.140286) (width 0.25) (layer "B.Cu"))
+  (segment (start 263.0209492 115.3945537) (end 263.7344719 116.1308521) (width 0.25) (layer "B.Cu"))
+  (segment (start 264.33500779999997 116.140286) (end 264.8377219 115.6531222) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 272.2281298 115.02912880000001) (end 271.878478 115.02363600000001) (width 0.25) (layer "B.Cu"))
-  (segment (start 270.0515494 114.7749092) (end 264.2775668 114.68420420000001) (width 0.25) (layer "B.Cu"))
-  (segment (start 271.878478 115.02363600000001) (end 271.1649552 114.28733770000001) (width 0.25) (layer "B.Cu"))
-  (segment (start 271.1649552 114.28733770000001) (end 270.5644193 114.2779037) (width 0.25) (layer "B.Cu"))
-  (segment (start 270.5644193 114.2779037) (end 270.0515494 114.7749092) (width 0.25) (layer "B.Cu"))
+  (segment (start 272.2201191 115.5390658) (end 271.8704673 115.53357299999999) (width 0.25) (layer "B.Cu"))
+  (segment (start 270.0435387 115.2848462) (end 264.2695561 115.19414119999999) (width 0.25) (layer "B.Cu"))
+  (segment (start 271.8704673 115.53357299999999) (end 271.1569445 114.7972747) (width 0.25) (layer "B.Cu"))
+  (segment (start 271.1569445 114.7972747) (end 270.5564086 114.7878407) (width 0.25) (layer "B.Cu"))
+  (segment (start 270.5564086 114.7878407) (end 270.0435387 115.2848462) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 272.1882333 117.5688155) (end 270.81340289999997 117.5472179) (width 0.25) (layer "F.Cu"))
-  (segment (start 262.6394114 117.4188106) (end 264.0142418 117.4404081) (width 0.25) (layer "F.Cu"))
+  (segment (start 272.1802226 118.0787525) (end 270.8053922 118.0571549) (width 0.25) (layer "F.Cu"))
+  (segment (start 262.6314007 117.9287476) (end 264.0062311 117.95034509999999) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 259.79476239999997 117.37412330000001) (end 261.9145009 117.4074228) (width 0.25) (layer "F.Cu"))
-  (segment (start 259.79476239999997 117.37412330000001) (end 261.9145009 117.4074228) (width 0.25) (layer "B.Cu"))
-  (segment (start 272.9131438 117.58020330000001) (end 275.0328823 117.6135028) (width 0.25) (layer "F.Cu"))
-  (segment (start 275.0328823 117.6135028) (end 272.9131438 117.58020330000001) (width 0.25) (layer "B.Cu"))
+  (segment (start 259.78675169999997 117.8840603) (end 261.9064902 117.9173598) (width 0.25) (layer "F.Cu"))
+  (segment (start 259.78675169999997 117.8840603) (end 261.9064902 117.9173598) (width 0.25) (layer "B.Cu"))
+  (segment (start 272.9051331 118.0901403) (end 275.0248716 118.1234398) (width 0.25) (layer "F.Cu"))
+  (segment (start 275.0248716 118.1234398) (end 272.9051331 118.0901403) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 264.805836 117.68287190000001) (end 270.5798186 117.7735768) (width 0.25) (layer "B.Cu"))
-  (segment (start 262.6394114 117.4188106) (end 262.9890633 117.4243033) (width 0.25) (layer "B.Cu"))
-  (segment (start 263.702586 118.1606017) (end 264.3031219 118.1700357) (width 0.25) (layer "B.Cu"))
-  (segment (start 262.9890633 117.4243033) (end 263.702586 118.1606017) (width 0.25) (layer "B.Cu"))
-  (segment (start 264.3031219 118.1700357) (end 264.805836 117.68287190000001) (width 0.25) (layer "B.Cu"))
+  (segment (start 264.7978253 118.1928089) (end 270.5718079 118.2835138) (width 0.25) (layer "B.Cu"))
+  (segment (start 262.6314007 117.9287476) (end 262.9810526 117.9342403) (width 0.25) (layer "B.Cu"))
+  (segment (start 263.6945753 118.6705387) (end 264.2951112 118.6799727) (width 0.25) (layer "B.Cu"))
+  (segment (start 262.9810526 117.9342403) (end 263.6945753 118.6705387) (width 0.25) (layer "B.Cu"))
+  (segment (start 264.2951112 118.6799727) (end 264.7978253 118.1928089) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 272.1882333 117.5688155) (end 271.8385814 117.5633227) (width 0.25) (layer "B.Cu"))
-  (segment (start 270.0116529 117.3145959) (end 264.2376703 117.2238909) (width 0.25) (layer "B.Cu"))
-  (segment (start 271.8385814 117.5633227) (end 271.1250587 116.8270243) (width 0.25) (layer "B.Cu"))
-  (segment (start 271.1250587 116.8270243) (end 270.5245227 116.8175903) (width 0.25) (layer "B.Cu"))
-  (segment (start 270.5245227 116.8175903) (end 270.0116529 117.3145959) (width 0.25) (layer "B.Cu"))
+  (segment (start 272.1802226 118.0787525) (end 271.8305707 118.0732597) (width 0.25) (layer "B.Cu"))
+  (segment (start 270.0036422 117.8245329) (end 264.2296596 117.7338279) (width 0.25) (layer "B.Cu"))
+  (segment (start 271.8305707 118.0732597) (end 271.117048 117.3369613) (width 0.25) (layer "B.Cu"))
+  (segment (start 271.117048 117.3369613) (end 270.516512 117.3275273) (width 0.25) (layer "B.Cu"))
+  (segment (start 270.516512 117.3275273) (end 270.0036422 117.8245329) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 272.1483367 120.10850210000001) (end 270.7735063 120.0869045) (width 0.25) (layer "F.Cu"))
-  (segment (start 262.5995148 119.95849720000001) (end 263.9743452 119.9800948) (width 0.25) (layer "F.Cu"))
+  (segment (start 272.140326 120.6184391) (end 270.7654956 120.5968415) (width 0.25) (layer "F.Cu"))
+  (segment (start 262.5915041 120.46843419999999) (end 263.9663345 120.4900318) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 259.7548658 119.9138099) (end 261.8746043 119.9471094) (width 0.25) (layer "F.Cu"))
-  (segment (start 259.7548658 119.9138099) (end 261.8746043 119.9471094) (width 0.25) (layer "B.Cu"))
-  (segment (start 272.8732472 120.1198899) (end 274.99298569999996 120.1531894) (width 0.25) (layer "F.Cu"))
-  (segment (start 274.99298569999996 120.1531894) (end 272.8732472 120.1198899) (width 0.25) (layer "B.Cu"))
+  (segment (start 259.7468551 120.4237469) (end 261.8665936 120.4570464) (width 0.25) (layer "F.Cu"))
+  (segment (start 259.7468551 120.4237469) (end 261.8665936 120.4570464) (width 0.25) (layer "B.Cu"))
+  (segment (start 272.8652365 120.6298269) (end 274.98497499999996 120.6631264) (width 0.25) (layer "F.Cu"))
+  (segment (start 274.98497499999996 120.6631264) (end 272.8652365 120.6298269) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 264.7659394 120.2225585) (end 270.539922 120.3132635) (width 0.25) (layer "B.Cu"))
-  (segment (start 262.5995148 119.95849720000001) (end 262.9491667 119.96399000000001) (width 0.25) (layer "B.Cu"))
-  (segment (start 263.6626895 120.7002884) (end 264.2632254 120.70972230000001) (width 0.25) (layer "B.Cu"))
-  (segment (start 262.9491667 119.96399000000001) (end 263.6626895 120.7002884) (width 0.25) (layer "B.Cu"))
-  (segment (start 264.2632254 120.70972230000001) (end 264.7659394 120.2225585) (width 0.25) (layer "B.Cu"))
+  (segment (start 264.7579287 120.7324955) (end 270.5319113 120.8232005) (width 0.25) (layer "B.Cu"))
+  (segment (start 262.5915041 120.46843419999999) (end 262.941156 120.473927) (width 0.25) (layer "B.Cu"))
+  (segment (start 263.6546788 121.2102254) (end 264.2552147 121.2196593) (width 0.25) (layer "B.Cu"))
+  (segment (start 262.941156 120.473927) (end 263.6546788 121.2102254) (width 0.25) (layer "B.Cu"))
+  (segment (start 264.2552147 121.2196593) (end 264.7579287 120.7324955) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 272.1483367 120.10850210000001) (end 271.7986848 120.1030093) (width 0.25) (layer "B.Cu"))
-  (segment (start 269.9717563 119.85428250000001) (end 264.19777369999997 119.7635775) (width 0.25) (layer "B.Cu"))
-  (segment (start 271.7986848 120.1030093) (end 271.0851621 119.36671100000001) (width 0.25) (layer "B.Cu"))
-  (segment (start 271.0851621 119.36671100000001) (end 270.4846262 119.35727700000001) (width 0.25) (layer "B.Cu"))
-  (segment (start 270.4846262 119.35727700000001) (end 269.9717563 119.85428250000001) (width 0.25) (layer "B.Cu"))
+  (segment (start 272.140326 120.6184391) (end 271.7906741 120.6129463) (width 0.25) (layer "B.Cu"))
+  (segment (start 269.9637456 120.36421949999999) (end 264.18976299999997 120.2735145) (width 0.25) (layer "B.Cu"))
+  (segment (start 271.7906741 120.6129463) (end 271.0771514 119.876648) (width 0.25) (layer "B.Cu"))
+  (segment (start 271.0771514 119.876648) (end 270.4766155 119.86721399999999) (width 0.25) (layer "B.Cu"))
+  (segment (start 270.4766155 119.86721399999999) (end 269.9637456 120.36421949999999) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 272.1084401 122.6481887) (end 270.7336097 122.62659120000001) (width 0.25) (layer "F.Cu"))
-  (segment (start 262.5596183 122.4981839) (end 263.9344486 122.5197814) (width 0.25) (layer "F.Cu"))
+  (segment (start 272.1004294 123.1581257) (end 270.725599 123.1365282) (width 0.25) (layer "F.Cu"))
+  (segment (start 262.5516076 123.0081209) (end 263.9264379 123.0297184) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 259.7149692 122.4534965) (end 261.83470769999997 122.4867961) (width 0.25) (layer "F.Cu"))
-  (segment (start 259.7149692 122.4534965) (end 261.83470769999997 122.4867961) (width 0.25) (layer "B.Cu"))
-  (segment (start 272.8333507 122.65957660000001) (end 274.9530891 122.6928761) (width 0.25) (layer "F.Cu"))
-  (segment (start 274.9530891 122.6928761) (end 272.8333507 122.65957660000001) (width 0.25) (layer "B.Cu"))
+  (segment (start 259.7069585 122.9634335) (end 261.82669699999997 122.9967331) (width 0.25) (layer "F.Cu"))
+  (segment (start 259.7069585 122.9634335) (end 261.82669699999997 122.9967331) (width 0.25) (layer "B.Cu"))
+  (segment (start 272.82534 123.1695136) (end 274.9450784 123.2028131) (width 0.25) (layer "F.Cu"))
+  (segment (start 274.9450784 123.2028131) (end 272.82534 123.1695136) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 264.7260428 122.76224520000001) (end 270.50002539999997 122.8529501) (width 0.25) (layer "B.Cu"))
-  (segment (start 262.5596183 122.4981839) (end 262.9092701 122.5036766) (width 0.25) (layer "B.Cu"))
-  (segment (start 263.6227929 123.239975) (end 264.2233288 123.249409) (width 0.25) (layer "B.Cu"))
-  (segment (start 262.9092701 122.5036766) (end 263.6227929 123.239975) (width 0.25) (layer "B.Cu"))
-  (segment (start 264.2233288 123.249409) (end 264.7260428 122.76224520000001) (width 0.25) (layer "B.Cu"))
+  (segment (start 264.7180321 123.2721822) (end 270.49201469999997 123.3628871) (width 0.25) (layer "B.Cu"))
+  (segment (start 262.5516076 123.0081209) (end 262.9012594 123.0136136) (width 0.25) (layer "B.Cu"))
+  (segment (start 263.6147822 123.749912) (end 264.2153181 123.759346) (width 0.25) (layer "B.Cu"))
+  (segment (start 262.9012594 123.0136136) (end 263.6147822 123.749912) (width 0.25) (layer "B.Cu"))
+  (segment (start 264.2153181 123.759346) (end 264.7180321 123.2721822) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 272.1084401 122.6481887) (end 271.75878819999997 122.642696) (width 0.25) (layer "B.Cu"))
-  (segment (start 269.9318597 122.3939691) (end 264.1578771 122.3032642) (width 0.25) (layer "B.Cu"))
-  (segment (start 271.75878819999997 122.642696) (end 271.04526549999997 121.9063976) (width 0.25) (layer "B.Cu"))
-  (segment (start 271.04526549999997 121.9063976) (end 270.4447296 121.8969636) (width 0.25) (layer "B.Cu"))
-  (segment (start 270.4447296 121.8969636) (end 269.9318597 122.3939691) (width 0.25) (layer "B.Cu"))
+  (segment (start 272.1004294 123.1581257) (end 271.75077749999997 123.152633) (width 0.25) (layer "B.Cu"))
+  (segment (start 269.923849 122.9039061) (end 264.1498664 122.8132012) (width 0.25) (layer "B.Cu"))
+  (segment (start 271.75077749999997 123.152633) (end 271.03725479999997 122.4163346) (width 0.25) (layer "B.Cu"))
+  (segment (start 271.03725479999997 122.4163346) (end 270.4367189 122.4069006) (width 0.25) (layer "B.Cu"))
+  (segment (start 270.4367189 122.4069006) (end 269.923849 122.9039061) (width 0.25) (layer "B.Cu"))
         
     
 
@@ -4947,7 +3716,7 @@
 
   (footprint "ceoloide:power_switch_smd_side"
     (layer "F.Cu")
-    (at 267.4886091 111.0141883 89.1)
+    (at 267.4846037 111.2691568 89.1)
     (property "Reference" "PWR1"
       (at -3.6 0 -0.9000000000000057)
       (layer "F.SilkS")
@@ -4986,6 +3755,15 @@
     (fp_line (start 1.425 2.85) (end 1.425 -2.85) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -1.425 -1.4) (end -1.425 -1.6) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     
+    (fp_line (start 1.795 4.4) (end -2.755 4.4) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start 1.795 1.65) (end 1.795 4.4) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start 3.095 1.65) (end 1.795 1.65) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start 3.095 -1.65) (end 3.095 1.65) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start 1.795 -1.65) (end 3.095 -1.65) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start 1.795 -4.4) (end 1.795 -1.65) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start -2.755 -4.4) (end 1.795 -4.4) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start -2.755 4.4) (end -2.755 -4.4) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
+    
     (fp_line (start 2.595 -0.1) (end 1.295 -0.1) (layer "B.Fab") (stroke (width 0.1) (type solid)))
     (fp_line (start -1.305 3.35) (end -1.305 -3.35) (layer "B.Fab") (stroke (width 0.1) (type solid)))
     (fp_line (start 2.645 -0.15) (end 2.595 -0.1) (layer "B.Fab") (stroke (width 0.1) (type solid)))
@@ -5018,6 +3796,15 @@
     (fp_line (start -0.375 -3.45) (end 0.415 -3.45) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -1.425 -1.6) (end -1.425 0.1) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 1.425 -2.85) (end 1.425 2.85) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
+    
+    (fp_line (start -2.755 -4.4) (end -2.755 4.4) (layer "B.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start 3.095 1.65) (end 3.095 -1.65) (layer "B.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start 1.795 1.65) (end 3.095 1.65) (layer "B.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start 1.795 -4.4) (end -2.755 -4.4) (layer "B.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start 1.795 -1.65) (end 1.795 -4.4) (layer "B.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start 3.095 -1.65) (end 1.795 -1.65) (layer "B.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start 1.795 4.4) (end 1.795 1.65) (layer "B.CrtYd") (stroke (width 0.05) (type solid)))
+    (fp_line (start -2.755 4.4) (end 1.795 4.4) (layer "B.CrtYd") (stroke (width 0.05) (type solid)))
     
     (pad "" np_thru_hole circle (at 0.025 -1.5 179.1) (size 0.9 0.9) (drill 0.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at 0.025 1.5 179.1) (size 0.9 0.9) (drill 0.9) (layers "*.Cu" "*.Mask"))
@@ -5072,6 +3859,35 @@
       (pad 1 thru_hole circle (at 0 0) (size 1 1) (drill 0.7) (layers *.Cu) (zone_connect 2) (net 52 "BAT_P"))
       )
     
+
+  (gr_text "JLCJLCJLCJLCJLC"
+    (at 188.6186364 150.7424164 1.8000000000000003)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "JLCJLCJLCJLCJLC"
+    (at 188.6186364 150.7424164 1.8000000000000003)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
   (gr_line (start 279.3195495019682 109.89590424625203) (end 279.3314595862298 167.58085313951597) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 279.3218948880676 167.64939455775664) (end 271.8551196983047 193.86171239610746) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 271.5461946030153 194.0336579045708) (end 254.36949480094756 189.14074629655804) (layer Edge.Cuts) (stroke (width 0.15) (type default)))

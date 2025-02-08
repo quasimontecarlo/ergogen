@@ -22,4 +22,5 @@ module.exports = {
     power_switch_smd_side: require('./power_switch_smd_side'),
     bat: require('./bat'),
     switch_choc_v1_v2: require('./switch_choc_v1_v2'),
+    utility_text: require('./utility_text'),
 }
