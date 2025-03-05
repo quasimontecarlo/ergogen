@@ -3,6 +3,12 @@
 
 ***Ergonomic Keyboard Generator***
 
+
+
+This is my fork of ergogen and includes the project files for quasikb, the source yaml can be found under src/quasikb.yaml, the resulting kicad files under /kb/ folder. This repo does also include external footprints from ceoloide.
+https://github.com/ceoloide/ergogen-footprints
+
+
 <br>
 
 <img
